@@ -1,0 +1,1034 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Punta Diamantes | Hotel, Restaurante y Resort en Playa Metalío</title>
+<meta name="description" content="Hotel, restaurante y resort frente al mar en Playa Metalío, Acajutla, Sonsonate. Habitaciones con aire acondicionado, piscina de agua salada, Day Pass y mariscos. Reserve por WhatsApp.">
+<meta property="og:title" content="Punta Diamantes | Hotel, Restaurante y Resort">
+<meta property="og:description" content="Frente al mar en Playa Metalío, Acajutla. Reserve su estadía o Day Pass por WhatsApp.">
+<meta property="og:image" content="img/piscina-ranchos-mural.jpg">
+<meta name="theme-color" content="#E54583">
+<link rel="icon" href="img/diamante-blanco.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Manrope:wght@400;500;600;700;800&family=Satisfy&display=swap" rel="stylesheet">
+<style>
+:root{
+  --pink:#E54583;        /* rosa oficial del logo */
+  --pink-600:#C9306D;    /* hover / texto rosa sobre blanco */
+  --pink-50:#FDF1F6;
+  --pink-100:#FBE1EC;
+  --plum:#2B1A24;        /* contraste oscuro (texto, pie de página) */
+  --sun:#F2B33D;         /* fachadas amarillas / estrellas */
+  --sand:#FBF7F1;
+  --ink:#2B1A24; --body:#5E4E57; --muted:#8C7D85; --line:#EFE4E9;
+  --wa:#25D366;
+  --r:20px; --r-sm:12px;
+  --shadow:0 18px 50px -18px rgba(43,26,36,.28);
+  --shadow-sm:0 6px 20px -8px rgba(43,26,36,.18);
+  --serif:"DM Serif Display",Georgia,serif;
+  --script:"Satisfy",cursive;
+  --sans:"Manrope",system-ui,-apple-system,sans-serif;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth;scroll-padding-top:84px}
+body{font-family:var(--sans);color:var(--body);background:#fff;line-height:1.7;font-size:16px;overflow-x:hidden;-webkit-font-smoothing:antialiased}
+img{max-width:100%;display:block}
+a{color:inherit;text-decoration:none}
+button{font:inherit}
+h1,h2,h3,h4{font-family:var(--serif);font-weight:400;color:var(--ink);line-height:1.12;letter-spacing:-.005em}
+.container{width:100%;max-width:1220px;margin:0 auto;padding:0 24px}
+.sec{padding:120px 0}
+@media(max-width:768px){.sec{padding:80px 0}.container{padding:0 20px}}
+.icon{width:24px;height:24px;flex:none}
+
+/* Encabezados de sección */
+.kicker{display:inline-flex;align-items:center;gap:12px;font-size:.78rem;font-weight:800;letter-spacing:.22em;text-transform:uppercase;color:var(--pink-600)}
+.kicker::before{content:"";width:34px;height:2px;background:var(--pink);border-radius:2px}
+.center .kicker::after{content:"";width:34px;height:2px;background:var(--pink);border-radius:2px}
+.h2{font-size:clamp(2.1rem,4.4vw,3.4rem);margin:16px 0 18px}
+.h2 .script{font-family:var(--script);color:var(--pink);font-size:1.08em}
+.lead{font-size:1.08rem;max-width:620px}
+.center{text-align:center}.center .lead{margin-left:auto;margin-right:auto}
+.sec-head{margin-bottom:60px}
+
+/* Botones */
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;height:54px;padding:0 30px;border-radius:999px;font-weight:700;font-size:.95rem;letter-spacing:.02em;border:0;cursor:pointer;transition:all .25s ease;white-space:nowrap}
+.btn .icon{width:20px;height:20px}
+.btn-pink{background:var(--pink);color:#fff;box-shadow:0 12px 26px -10px rgba(229,69,131,.7)}
+.btn-pink:hover{background:var(--pink-600);transform:translateY(-2px)}
+.btn-outline{border:1.5px solid rgba(255,255,255,.7);color:#fff}
+.btn-outline:hover{background:#fff;color:var(--plum)}
+.btn-dark{background:var(--plum);color:#fff}
+.btn-dark:hover{background:var(--pink);transform:translateY(-2px)}
+.btn-line{border:1.5px solid var(--plum);color:var(--plum)}
+.btn-line:hover{background:var(--plum);color:#fff}
+.btn-wa{background:var(--wa);color:#073b1d}
+.btn-wa:hover{filter:brightness(.95);transform:translateY(-2px)}
+.link-arrow{display:inline-flex;align-items:center;gap:8px;font-weight:700;color:var(--pink-600);font-size:.95rem}
+.link-arrow .icon{width:18px;height:18px;transition:transform .2s}
+.link-arrow:hover .icon{transform:translateX(4px)}
+
+/* Barra superior */
+.topbar{background:var(--plum);color:#E9D9E1;font-size:.84rem;position:relative;z-index:61}
+.topbar .container{display:flex;justify-content:space-between;align-items:center;height:42px;gap:20px}
+.topbar .group{display:flex;gap:26px;align-items:center}
+.topbar a,.topbar .txt{display:inline-flex;align-items:center;gap:8px;transition:color .2s}
+.topbar a:hover{color:#fff}
+.topbar .icon{width:16px;height:16px;color:var(--pink)}
+.topbar .soc a .icon{color:#E9D9E1}
+.topbar .soc a:hover .icon{color:var(--pink)}
+@media(max-width:860px){.topbar .hide-sm{display:none}}
+@media(max-width:560px){.topbar{display:none}}
+
+/* Header */
+.header{position:absolute;top:42px;left:0;right:0;z-index:60}
+@media(max-width:560px){.header{top:0}}
+.header.fixed{position:fixed;top:0;background:#fff;box-shadow:0 8px 30px -12px rgba(43,26,36,.2);animation:slideDown .35s ease}
+@keyframes slideDown{from{transform:translateY(-100%)}to{transform:none}}
+.header .container{display:flex;align-items:center;justify-content:space-between;height:96px;transition:height .3s}
+.header.fixed .container{height:76px}
+.logo{position:relative;display:block;height:64px;width:106px;transition:height .3s,width .3s}
+.header.fixed .logo{height:52px;width:86px}
+.logo img{position:absolute;inset:0;height:100%;width:auto;transition:opacity .3s}
+.logo .l-pink{opacity:0}
+.header.fixed .logo .l-white{opacity:0}.header.fixed .logo .l-pink{opacity:1}
+.nav{display:flex;align-items:center;gap:36px;list-style:none}
+.nav a{color:#fff;font-weight:600;font-size:.93rem;position:relative;padding:6px 0;transition:color .2s}
+.nav a:not(.btn)::after{content:"";position:absolute;left:0;right:100%;bottom:0;height:2px;background:var(--pink);transition:right .25s}
+.nav a:not(.btn):hover::after,.nav a.active::after{right:0}
+.header.fixed .nav a:not(.btn){color:var(--ink)}
+.nav .btn{height:46px;padding:0 24px;color:#fff}
+.burger{display:none;width:46px;height:46px;border-radius:50%;border:1.5px solid rgba(255,255,255,.6);background:transparent;color:#fff;cursor:pointer;align-items:center;justify-content:center}
+.header.fixed .burger{border-color:var(--line);color:var(--ink)}
+.nav-close{display:none}
+@media(max-width:1020px){
+  .burger{display:inline-flex}
+  .nav{position:fixed;inset:0 0 0 auto;width:min(340px,86vw);flex-direction:column;align-items:stretch;gap:0;background:#fff;padding:96px 28px 28px;transform:translateX(105%);transition:transform .35s ease;box-shadow:-20px 0 60px rgba(0,0,0,.2);z-index:62}
+  .nav.open{transform:none}
+  .nav a:not(.btn){color:var(--ink)!important;display:block;padding:16px 0;border-bottom:1px solid var(--line);font-size:1.05rem}
+  .nav a::after{display:none}
+  .nav .btn{margin-top:24px;width:100%}
+  .nav-close{position:absolute;top:24px;right:22px;width:44px;height:44px;border-radius:50%;border:1px solid var(--line);background:#fff;display:flex;align-items:center;justify-content:center;cursor:pointer;color:var(--ink)}
+  .scrim{position:fixed;inset:0;background:rgba(43,26,36,.5);opacity:0;pointer-events:none;transition:opacity .3s;z-index:61}
+  .scrim.show{opacity:1;pointer-events:auto}
+}
+
+/* Hero */
+.hero{position:relative;min-height:max(720px,100svh);display:flex;align-items:center;color:#fff;overflow:hidden;background:var(--plum)}
+.slides,.slides div{position:absolute;inset:0}
+.slides div{background-size:cover;background-position:center;opacity:0;transform:scale(1.08);transition:opacity 1.6s ease,transform 7s linear}
+.slides div.on{opacity:1;transform:scale(1)}
+.hero::before{content:"";position:absolute;inset:0;z-index:1;background:linear-gradient(90deg,rgba(43,26,36,.85) 0%,rgba(43,26,36,.55) 45%,rgba(43,26,36,.15) 100%),linear-gradient(0deg,rgba(43,26,36,.55),transparent 40%)}
+.hero .container{position:relative;z-index:2;padding-top:130px;padding-bottom:150px}
+.hero-script{font-family:var(--script);font-size:clamp(1.7rem,3.2vw,2.4rem);color:#FFB9D3;display:block;margin-bottom:6px}
+.hero h1{color:#fff;font-size:clamp(2.7rem,6.6vw,5.3rem);max-width:820px;margin-bottom:24px}
+.hero h1 em{font-style:italic;color:#FFC7DC}
+.hero p{font-size:clamp(1.02rem,1.6vw,1.18rem);max-width:540px;color:rgba(255,255,255,.88);margin-bottom:38px}
+.hero-cta{display:flex;flex-wrap:wrap;gap:14px}
+.hero-dots{position:absolute;z-index:3;right:24px;top:50%;transform:translateY(-50%);display:flex;flex-direction:column;gap:12px}
+.hero-dots button{width:10px;height:10px;border-radius:50%;border:1.5px solid #fff;background:transparent;cursor:pointer;transition:all .3s}
+.hero-dots button.on{background:var(--pink);border-color:var(--pink);height:28px;border-radius:6px}
+.hero-rating{display:inline-flex;align-items:center;gap:12px;margin-top:44px;padding:10px 18px 10px 10px;border-radius:999px;background:rgba(255,255,255,.12);border:1px solid rgba(255,255,255,.22);backdrop-filter:blur(8px);font-size:.9rem;flex-wrap:wrap}
+.hero-rating b{background:#fff;color:var(--plum);border-radius:999px;padding:4px 12px;font-size:.95rem}
+.stars{display:inline-flex;gap:2px;color:var(--sun)}.stars .icon{width:16px;height:16px}
+@media(max-width:768px){.hero-dots{display:none}.hero .container{padding-top:120px;padding-bottom:120px}.hero::before{background:linear-gradient(0deg,rgba(43,26,36,.92) 0%,rgba(43,26,36,.6) 60%,rgba(43,26,36,.4) 100%)}}
+
+/* Barra de reserva */
+.quickbook{position:relative;z-index:5;margin-top:-62px}
+.qb{background:#fff;border-radius:var(--r);box-shadow:var(--shadow);display:grid;grid-template-columns:1.1fr 1fr 1fr 1fr auto;align-items:stretch;padding:12px}
+.qb .fld{padding:12px 22px;border-right:1px solid var(--line);display:flex;flex-direction:column;justify-content:center;min-width:0}
+.qb .fld:nth-last-child(2){border-right:0}
+.qb label{font-size:.72rem;font-weight:800;letter-spacing:.14em;text-transform:uppercase;color:var(--muted);display:flex;align-items:center;gap:8px;margin-bottom:4px}
+.qb label .icon{width:16px;height:16px;color:var(--pink)}
+.qb input,.qb select{border:0;background:transparent;font:inherit;font-weight:700;color:var(--ink);font-size:16px;padding:2px 0;width:100%;outline:none;cursor:pointer;min-width:0}
+.qb .btn{height:auto;min-height:64px;border-radius:14px;padding:0 34px}
+@media(max-width:1020px){.qb{grid-template-columns:1fr 1fr}.qb .fld{border-right:0;border-bottom:1px solid var(--line)}.qb .fld:nth-child(odd){border-right:1px solid var(--line)}.qb .btn{grid-column:1/-1;margin-top:10px}}
+@media(max-width:520px){.qb{grid-template-columns:1fr}.qb .fld:nth-child(odd){border-right:0}.quickbook{margin-top:-48px}}
+
+/* Nosotros */
+.about{display:grid;grid-template-columns:1fr 1fr;gap:90px;align-items:center}
+.collage{position:relative;padding:0 60px 70px 0}
+.collage .a{border-radius:var(--r);overflow:hidden;aspect-ratio:4/4.6;box-shadow:var(--shadow)}
+.collage .b{position:absolute;right:0;bottom:0;width:52%;border-radius:var(--r);overflow:hidden;aspect-ratio:1;border:8px solid #fff;box-shadow:var(--shadow)}
+.collage img{width:100%;height:100%;object-fit:cover}
+.collage .badge{position:absolute;left:-26px;top:38px;background:var(--pink);color:#fff;border-radius:var(--r);padding:22px 24px;box-shadow:0 20px 40px -14px rgba(229,69,131,.7);text-align:center}
+.collage .badge img{width:62px;height:auto;margin:0 auto 8px}
+.collage .badge b{display:block;font-family:var(--serif);font-size:1.6rem;font-weight:400;line-height:1}
+.collage .badge span{font-size:.72rem;letter-spacing:.14em;text-transform:uppercase;font-weight:700;opacity:.9}
+.about p+p{margin-top:16px}
+.facts{display:grid;grid-template-columns:repeat(3,1fr);margin:38px 0 36px;border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
+.facts div{padding:22px 10px 22px 0}
+.facts div+div{padding-left:22px;border-left:1px solid var(--line)}
+.facts b{display:block;font-family:var(--serif);font-weight:400;font-size:2rem;color:var(--pink);line-height:1.1}
+.facts span{font-size:.85rem;color:var(--muted)}
+.about-cta{display:flex;flex-wrap:wrap;gap:22px;align-items:center}
+@media(max-width:960px){.about{grid-template-columns:1fr;gap:60px}.collage{max-width:560px;width:100%;margin:0 auto;padding:0 40px 50px 0}.collage .badge{left:-6px}}
+@media(max-width:480px){.facts b{font-size:1.5rem}.facts div+div{padding-left:14px}.collage .badge{padding:16px 18px}.collage .badge img{width:46px}}
+
+/* Amenidades */
+.amen{background:var(--pink-50);position:relative;overflow:hidden}
+.amen::before{content:"";position:absolute;right:-120px;top:-60px;width:420px;height:420px;background:url(img/diamante-blanco.png) center/contain no-repeat;opacity:.7}
+.amen-grid{display:grid;grid-template-columns:repeat(5,1fr);gap:20px;position:relative}
+.am{background:#fff;border-radius:var(--r);padding:32px 20px 28px;text-align:center;transition:transform .3s,box-shadow .3s}
+.am:hover{transform:translateY(-6px);box-shadow:var(--shadow)}
+.am .ic{width:68px;height:68px;margin:0 auto 18px;border-radius:50%;background:var(--pink-50);color:var(--pink);display:grid;place-items:center;transition:all .3s}
+.am:hover .ic{background:var(--pink);color:#fff}
+.am .ic .icon{width:32px;height:32px}
+.am h4{font-family:var(--sans);font-weight:700;font-size:1rem;margin-bottom:4px}
+.am p{font-size:.86rem;color:var(--muted);line-height:1.5}
+@media(max-width:1020px){.amen-grid{grid-template-columns:repeat(3,1fr)}}
+@media(max-width:640px){.amen-grid{grid-template-columns:repeat(2,1fr);gap:14px}.am{padding:24px 12px}}
+
+/* Habitaciones */
+.rooms{display:grid;grid-template-columns:repeat(3,1fr);gap:30px}
+.room{background:#fff;border-radius:var(--r);overflow:hidden;box-shadow:var(--shadow-sm);transition:box-shadow .3s,transform .3s;display:flex;flex-direction:column}
+.room:hover{box-shadow:var(--shadow);transform:translateY(-6px)}
+.room .pic{position:relative;aspect-ratio:4/3;overflow:hidden}
+.room .pic img{width:100%;height:100%;object-fit:cover;transition:transform .8s}
+.room:hover .pic img{transform:scale(1.07)}
+.room .tag{position:absolute;left:18px;top:18px;background:rgba(255,255,255,.95);color:var(--pink-600);font-size:.72rem;font-weight:800;letter-spacing:.14em;text-transform:uppercase;padding:7px 14px;border-radius:999px}
+.room .body{padding:28px 28px 30px;display:flex;flex-direction:column;flex:1}
+.room h3{font-size:1.65rem;margin-bottom:10px}
+.room p{font-size:.95rem;margin-bottom:20px}
+.room ul{list-style:none;display:flex;flex-wrap:wrap;gap:10px 20px;padding:18px 0;border-top:1px solid var(--line);margin-top:auto;margin-bottom:22px}
+.room li{display:flex;align-items:center;gap:7px;font-size:.84rem;font-weight:600;color:var(--ink)}
+.room li .icon{width:20px;height:20px;color:var(--pink)}
+.room .foot{display:flex;justify-content:space-between;align-items:center}
+.room .foot small{font-size:.75rem;color:var(--muted);text-transform:uppercase;letter-spacing:.12em;font-weight:700}
+.room .foot small b{display:block;font-size:1rem;color:var(--ink);text-transform:none;letter-spacing:0}
+.room .btn{height:46px;padding:0 24px}
+@media(max-width:1020px){.rooms{grid-template-columns:repeat(2,1fr)}}
+@media(max-width:680px){.rooms{grid-template-columns:1fr}}
+.policy{margin-top:46px;display:flex;flex-wrap:wrap;justify-content:center;gap:14px 40px;font-size:.92rem;color:var(--ink);font-weight:600}
+.policy span{display:inline-flex;align-items:center;gap:10px}
+.policy .icon{width:20px;height:20px;color:var(--pink)}
+
+/* Day Pass */
+.daypass{position:relative;color:#fff;background:url(img/piscina-rancho.jpg) center/cover fixed;overflow:hidden}
+@media(hover:none),(max-width:1020px){.daypass{background-attachment:scroll}}
+.daypass::before{content:"";position:absolute;inset:0;background:linear-gradient(100deg,rgba(43,26,36,.94) 0%,rgba(43,26,36,.8) 45%,rgba(229,69,131,.55) 100%)}
+.dp{position:relative;display:grid;grid-template-columns:1.1fr .9fr;gap:70px;align-items:center}
+.daypass .kicker{color:#FFB9D3}.daypass .kicker::before{background:#FFB9D3}
+.daypass .h2{color:#fff}
+.daypass .lead{color:rgba(255,255,255,.85)}
+.dp-list{list-style:none;display:grid;grid-template-columns:1fr 1fr;gap:16px 30px;margin-top:34px}
+.dp-list li{display:flex;align-items:center;gap:14px;font-weight:600}
+.dp-list .ck{width:30px;height:30px;border-radius:50%;background:var(--pink);display:grid;place-items:center;flex:none}
+.dp-list .ck .icon{width:16px;height:16px}
+.dp-card{background:#fff;color:var(--body);border-radius:var(--r);padding:40px 36px;box-shadow:0 30px 60px -20px rgba(0,0,0,.5);position:relative}
+.dp-card::before{content:"";position:absolute;top:0;left:36px;right:36px;height:4px;background:var(--pink);border-radius:0 0 4px 4px}
+.dp-card .script{font-family:var(--script);color:var(--pink);font-size:1.6rem}
+.dp-card h3{font-size:2.2rem;margin:2px 0 14px}
+.dp-row{display:flex;gap:16px;padding:16px 0;border-bottom:1px solid var(--line)}
+.dp-row:last-of-type{border-bottom:0;margin-bottom:22px}
+.dp-row .icon{color:var(--pink);margin-top:2px}
+.dp-row b{display:block;color:var(--ink)}
+.dp-row span{font-size:.9rem;color:var(--muted)}
+.dp-card .btn{width:100%}
+@media(max-width:960px){.dp{grid-template-columns:1fr;gap:50px}}
+@media(max-width:520px){.dp-list{grid-template-columns:1fr}.dp-card{padding:34px 24px}}
+
+/* Restaurante */
+.resto{display:grid;grid-template-columns:1fr 1fr;gap:90px;align-items:center}
+.resto-pics{position:relative;display:grid;grid-template-columns:1fr 1fr;gap:18px}
+.resto-pics .p{border-radius:var(--r);overflow:hidden;box-shadow:var(--shadow-sm)}
+.resto-pics .p img{width:100%;height:100%;object-fit:cover}
+.resto-pics .p1{grid-row:span 2}
+.resto-pics .p2,.resto-pics .p3{aspect-ratio:1}
+.resto-pics .stamp{position:absolute;left:50%;top:50%;transform:translate(-50%,-50%);width:124px;height:124px;border-radius:50%;background:var(--pink);color:#fff;display:grid;place-items:center;text-align:center;border:6px solid #fff;box-shadow:var(--shadow-sm);font-family:var(--script);font-size:1.4rem;line-height:1.05}
+.dish{display:flex;gap:20px;padding:22px 0;border-bottom:1px solid var(--line)}
+.dish:first-of-type{border-top:1px solid var(--line);margin-top:30px}
+.dish .ic{width:56px;height:56px;border-radius:16px;background:var(--pink-50);color:var(--pink);display:grid;place-items:center;flex:none}
+.dish .ic .icon{width:28px;height:28px}
+.dish h4{font-family:var(--sans);font-weight:700;font-size:1.05rem;margin-bottom:2px}
+.dish p{font-size:.93rem}
+.resto .btns{display:flex;flex-wrap:wrap;gap:14px;margin-top:34px}
+@media(max-width:960px){.resto{grid-template-columns:1fr;gap:60px}.resto-pics{order:-1}}
+@media(max-width:480px){.resto-pics .stamp{width:96px;height:96px;font-size:1.1rem;border-width:4px}}
+
+/* Galería */
+.gal-sec{background:var(--sand)}
+.filters{display:flex;flex-wrap:wrap;justify-content:center;gap:10px;margin:-20px 0 44px}
+.filters button{height:44px;padding:0 22px;border-radius:999px;border:1.5px solid var(--line);background:#fff;color:var(--ink);font-weight:700;font-size:.88rem;cursor:pointer;transition:all .2s}
+.filters button:hover{border-color:var(--pink);color:var(--pink-600)}
+.filters button.on{background:var(--pink);border-color:var(--pink);color:#fff}
+.gallery{display:grid;grid-template-columns:repeat(4,1fr);grid-auto-rows:240px;grid-auto-flow:dense;gap:16px}
+.gi{position:relative;border-radius:var(--r-sm);overflow:hidden;cursor:zoom-in;background:var(--pink-100)}
+.gi img{width:100%;height:100%;object-fit:cover;transition:transform .7s}
+.gi::after{content:"";position:absolute;inset:0;background:linear-gradient(0deg,rgba(43,26,36,.7),transparent 55%);opacity:0;transition:opacity .3s}
+.gi .cap{position:absolute;left:18px;bottom:16px;right:18px;z-index:1;color:#fff;font-weight:700;font-size:.92rem;transform:translateY(10px);opacity:0;transition:all .3s;display:flex;justify-content:space-between;align-items:center;gap:10px}
+.gi .cap .icon{width:20px;height:20px}
+.gi:hover img{transform:scale(1.08)}.gi:hover::after,.gi:focus-visible::after{opacity:1}.gi:hover .cap,.gi:focus-visible .cap{opacity:1;transform:none}
+.gi.w{grid-column:span 2}.gi.t{grid-row:span 2}
+.gi.hide{display:none}
+@media(max-width:960px){.gallery{grid-template-columns:repeat(3,1fr);grid-auto-rows:200px}}
+@media(max-width:640px){.gallery{grid-template-columns:repeat(2,1fr);grid-auto-rows:150px;gap:10px}.gi .cap{opacity:1;transform:none;font-size:.78rem;left:12px;bottom:10px}.gi .cap .icon{display:none}.gi::after{opacity:1}}
+.lightbox{position:fixed;inset:0;z-index:100;background:rgba(25,14,21,.95);display:none;align-items:center;justify-content:center;padding:70px 20px}
+.lightbox.open{display:flex}
+.lightbox figure{max-width:1100px;width:100%;text-align:center}
+.lightbox img{max-height:76vh;margin:0 auto;border-radius:10px}
+.lightbox figcaption{color:#E9D9E1;margin-top:16px;font-weight:600}
+.lb{position:absolute;width:52px;height:52px;border-radius:50%;border:1px solid rgba(255,255,255,.25);background:rgba(255,255,255,.06);color:#fff;cursor:pointer;display:grid;place-items:center;transition:background .2s}
+.lb:hover{background:var(--pink);border-color:var(--pink)}
+.lb-x{top:20px;right:20px}.lb-p{left:20px;top:50%;transform:translateY(-50%)}.lb-n{right:20px;top:50%;transform:translateY(-50%)}
+@media(max-width:640px){.lb-p,.lb-n{top:auto;bottom:20px;transform:none}}
+
+/* Opiniones */
+.scores{display:grid;grid-template-columns:repeat(3,1fr);gap:26px}
+.score{border:1px solid var(--line);border-radius:var(--r);padding:36px 32px;text-align:center;transition:all .3s}
+.score:hover{border-color:var(--pink-100);box-shadow:var(--shadow-sm)}
+.score .big{font-family:var(--serif);font-size:3.6rem;color:var(--ink);line-height:1}
+.score .big small{font-size:1.3rem;color:var(--muted)}
+.score .stars{margin:12px 0 10px}.score .stars .icon{width:20px;height:20px}
+.score b{display:block;color:var(--ink);font-size:1.02rem}
+.score span{font-size:.88rem;color:var(--muted)}
+.loved{margin-top:46px;display:flex;flex-wrap:wrap;justify-content:center;gap:12px}
+.loved span{display:inline-flex;align-items:center;gap:10px;background:var(--pink-50);color:var(--ink);font-weight:600;font-size:.92rem;padding:12px 20px;border-radius:999px}
+.loved .icon{width:18px;height:18px;color:var(--pink)}
+@media(max-width:860px){.scores{grid-template-columns:1fr}}
+
+/* Reservas */
+.book-sec{background:linear-gradient(180deg,#fff 0,var(--pink-50) 100%)}
+.book{display:grid;grid-template-columns:.85fr 1.15fr;border-radius:28px;overflow:hidden;box-shadow:var(--shadow);background:#fff}
+.book-side{position:relative;color:#fff;padding:54px 46px;display:flex;flex-direction:column;background:url(img/edificio-piscina.jpg) center/cover}
+.book-side::before{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(229,69,131,.93),rgba(43,26,36,.95))}
+.book-side>*{position:relative}
+.book-side img.logo-s{width:120px;margin-bottom:34px}
+.book-side h3{color:#fff;font-size:2.2rem;margin-bottom:14px}
+.book-side p{color:rgba(255,255,255,.85)}
+.steps{list-style:none;margin:34px 0;display:grid;gap:20px;counter-reset:s}
+.steps li{display:flex;gap:16px;align-items:flex-start;counter-increment:s}
+.steps li::before{content:counter(s);width:34px;height:34px;border-radius:50%;border:1.5px solid rgba(255,255,255,.6);display:grid;place-items:center;font-weight:800;flex:none;font-size:.9rem}
+.steps b{display:block;color:#fff}
+.steps span{font-size:.9rem;color:rgba(255,255,255,.78)}
+.book-side .contact{margin-top:auto;padding-top:26px;border-top:1px solid rgba(255,255,255,.2);display:grid;gap:12px}
+.book-side .contact a{display:flex;align-items:center;gap:12px;font-weight:700}
+.book-side .contact .icon{width:20px;height:20px}
+form.bk{padding:50px 48px}
+.seg{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-bottom:30px}
+.seg input{position:absolute;opacity:0;pointer-events:none}
+.seg label{display:flex;align-items:center;gap:14px;padding:16px 18px;border:1.5px solid var(--line);border-radius:16px;cursor:pointer;transition:all .2s}
+.seg label .ic{width:44px;height:44px;border-radius:12px;background:var(--pink-50);color:var(--pink);display:grid;place-items:center;flex:none;transition:all .2s}
+.seg label b{display:block;color:var(--ink);font-size:1rem;line-height:1.3}
+.seg label .sub{font-size:.8rem;color:var(--muted)}
+.seg input:checked+label{border-color:var(--pink);background:var(--pink-50)}
+.seg input:checked+label .ic{background:var(--pink);color:#fff}
+.seg input:focus-visible+label{outline:3px solid var(--pink-100)}
+.fgrid{display:grid;grid-template-columns:1fr 1fr;gap:20px}
+.f{display:flex;flex-direction:column;gap:8px;min-width:0}
+.f.full{grid-column:1/-1}
+.f label{font-size:.76rem;font-weight:800;letter-spacing:.1em;text-transform:uppercase;color:var(--ink)}
+.f label i{color:var(--pink);font-style:normal}
+.f input,.f select,.f textarea{font:inherit;font-size:16px;color:var(--ink);height:54px;padding:0 18px;border:1.5px solid var(--line);border-radius:var(--r-sm);background:#fff;width:100%;min-width:0;transition:border-color .2s,box-shadow .2s;-webkit-appearance:none;appearance:none}
+.f select{background:#fff url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='8' viewBox='0 0 12 8'%3E%3Cpath d='M1 1l5 5 5-5' stroke='%23E54583' stroke-width='2' fill='none' stroke-linecap='round'/%3E%3C/svg%3E") right 18px center no-repeat;padding-right:44px}
+.f textarea{height:auto;min-height:110px;padding:14px 18px;resize:vertical}
+.f input:focus,.f select:focus,.f textarea:focus{outline:none;border-color:var(--pink);box-shadow:0 0 0 4px var(--pink-100)}
+.f .err{display:none;font-size:.8rem;color:var(--pink-600);font-weight:600}
+.f.bad input,.f.bad select,.f.bad .stepper{border-color:var(--pink-600)}.f.bad .err{display:block}
+.stepper{display:flex;align-items:center;height:54px;border:1.5px solid var(--line);border-radius:var(--r-sm);overflow:hidden}
+.stepper button{width:52px;height:100%;border:0;background:none;color:var(--pink);cursor:pointer;display:grid;place-items:center;flex:none}
+.stepper button:hover{background:var(--pink-50)}
+.stepper input{border:0!important;box-shadow:none!important;text-align:center;font-weight:700;height:100%;padding:0;-moz-appearance:textfield}
+.stepper input::-webkit-inner-spin-button,.stepper input::-webkit-outer-spin-button{-webkit-appearance:none;margin:0}
+.summary{grid-column:1/-1;display:none;align-items:center;gap:12px;background:var(--pink-50);border-radius:var(--r-sm);padding:14px 18px;font-weight:600;color:var(--ink);font-size:.95rem}
+.summary .icon{color:var(--pink);width:20px;height:20px}
+.summary.show{display:flex}
+.hidden{display:none!important}
+.send{width:100%;height:60px;margin-top:28px;font-size:1rem}
+.note{text-align:center;font-size:.85rem;color:var(--muted);margin-top:14px;display:flex;justify-content:center;align-items:center;gap:8px}
+.note .icon{width:16px;height:16px;color:var(--pink)}
+@media(max-width:1020px){.book{grid-template-columns:1fr}.book-side{padding:44px 32px}}
+@media(max-width:560px){form.bk{padding:34px 20px}.fgrid{grid-template-columns:1fr}.seg{grid-template-columns:1fr}.book{border-radius:20px}.book-side{padding:40px 24px}}
+
+/* Ubicación */
+.loc{display:grid;grid-template-columns:1.35fr 1fr;border-radius:28px;overflow:hidden;box-shadow:var(--shadow)}
+.map{min-height:520px;background:var(--pink-50)}
+.map iframe{width:100%;height:100%;min-height:520px;border:0;display:block}
+.loc-card{background:var(--plum);color:#E9D9E1;padding:54px 46px;display:flex;flex-direction:column}
+.loc-card .kicker{color:#FFB9D3}.loc-card .kicker::before{background:#FFB9D3}
+.loc-card h3{color:#fff;font-size:2.3rem;margin:14px 0 22px}
+.li{display:flex;gap:16px;padding:16px 0;border-bottom:1px solid rgba(255,255,255,.1)}
+.li .icon{color:var(--pink);margin-top:3px}
+.li b{display:block;color:#fff;font-weight:700}
+.li span{font-size:.92rem}
+.nav-apps{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-top:34px}
+.app{display:flex;align-items:center;gap:12px;padding:14px 16px;border-radius:14px;background:#fff;color:var(--ink);font-weight:700;transition:transform .2s}
+.app:hover{transform:translateY(-3px)}
+.app svg{width:36px;height:36px;flex:none}
+.app small{display:block;font-size:.72rem;font-weight:600;color:var(--muted);line-height:1.2}
+@media(max-width:960px){.loc{grid-template-columns:1fr}.map,.map iframe{min-height:360px}.loc-card{padding:40px 28px}}
+@media(max-width:400px){.nav-apps{grid-template-columns:1fr}}
+
+/* Redes */
+.social-band{background:var(--pink);color:#fff;position:relative;overflow:hidden}
+.social-band::before,.social-band::after{content:"";position:absolute;width:280px;height:280px;background:url(img/diamante-blanco.png) center/contain no-repeat;opacity:.12}
+.social-band::before{left:-60px;bottom:-110px}.social-band::after{right:-40px;top:-120px;transform:rotate(18deg)}
+.sb{position:relative;display:flex;align-items:center;justify-content:space-between;gap:40px;padding:70px 24px}
+.sb .script{font-family:var(--script);font-size:1.8rem;display:block;color:#FFE1EC}
+.sb h2{color:#fff;font-size:clamp(1.9rem,3.6vw,2.8rem)}
+.sb-links{display:flex;flex-wrap:wrap;gap:14px}
+.sb-links a{display:flex;align-items:center;gap:12px;background:rgba(255,255,255,.14);border:1px solid rgba(255,255,255,.3);padding:10px 22px 10px 10px;border-radius:999px;font-weight:700;transition:all .2s}
+.sb-links a:hover{background:#fff;color:var(--pink-600)}
+.sb-links .ci{width:40px;height:40px;border-radius:50%;background:#fff;color:var(--pink);display:grid;place-items:center;flex:none}
+.sb-links .ci .icon{width:20px;height:20px}
+.sb-links small{display:block;font-weight:500;font-size:.75rem;opacity:.85;line-height:1.2}
+@media(max-width:960px){.sb{flex-direction:column;align-items:flex-start;padding:60px 20px}}
+
+/* Footer */
+footer{background:var(--plum);color:#BFAAB5;padding:90px 0 0;font-size:.94rem}
+.ft{display:grid;grid-template-columns:1.4fr 1fr 1fr 1.3fr;gap:50px}
+.ft img{width:150px;margin-bottom:22px}
+footer h4{color:#fff;font-size:1.3rem;margin-bottom:22px}
+footer ul{list-style:none;display:grid;gap:12px}
+footer a:hover{color:var(--pink)}
+.fc li{display:flex;gap:12px;align-items:flex-start;word-break:break-word}
+.fc .icon{width:18px;height:18px;color:var(--pink);margin-top:4px}
+.fsoc{display:flex;gap:10px;margin-top:24px}
+.fsoc a{width:44px;height:44px;border-radius:50%;border:1px solid rgba(255,255,255,.15);display:grid;place-items:center;color:#fff;transition:all .2s}
+.fsoc a:hover{background:var(--pink);border-color:var(--pink);color:#fff}
+.fsoc .icon{width:18px;height:18px}
+.fbottom{margin-top:70px;border-top:1px solid rgba(255,255,255,.08);padding:26px 0;display:flex;justify-content:space-between;flex-wrap:wrap;gap:12px;font-size:.85rem}
+@media(max-width:960px){.ft{grid-template-columns:1fr 1fr}}
+@media(max-width:560px){.ft{grid-template-columns:1fr;gap:40px}footer{padding-top:70px}}
+
+/* WhatsApp flotante y subir */
+.fab{position:fixed;right:22px;bottom:22px;z-index:70;width:62px;height:62px;border-radius:50%;background:var(--wa);color:#fff;display:grid;place-items:center;box-shadow:0 14px 30px -8px rgba(37,211,102,.6)}
+.fab .icon{width:32px;height:32px}
+.fab::before{content:"";position:absolute;inset:0;border-radius:50%;border:2px solid var(--wa);animation:ring 2.2s infinite}
+@keyframes ring{from{transform:scale(1);opacity:.8}to{transform:scale(1.6);opacity:0}}
+.fab-tip{position:absolute;right:76px;white-space:nowrap;background:#fff;color:var(--ink);font-weight:700;font-size:.85rem;padding:9px 16px;border-radius:999px;box-shadow:var(--shadow-sm);opacity:0;transform:translateX(8px);transition:all .25s;pointer-events:none}
+.fab:hover .fab-tip{opacity:1;transform:none}
+.totop{position:fixed;right:30px;bottom:98px;z-index:69;width:46px;height:46px;border-radius:50%;background:#fff;color:var(--pink);border:1px solid var(--line);box-shadow:var(--shadow-sm);display:grid;place-items:center;cursor:pointer;opacity:0;pointer-events:none;transition:opacity .3s}
+.totop.show{opacity:1;pointer-events:auto}
+
+/* Animaciones */
+.rv{opacity:0;transform:translateY(34px);transition:opacity .9s ease,transform .9s ease}
+.rv.in{opacity:1;transform:none}
+.rv.d1{transition-delay:.1s}.rv.d2{transition-delay:.2s}.rv.d3{transition-delay:.3s}.rv.d4{transition-delay:.4s}
+@media(prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}.rv{opacity:1;transform:none}html{scroll-behavior:auto}}
+</style>
+</head>
+<body>
+
+<!-- Íconos SVG -->
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <defs>
+  <symbol id="phone" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round" d="M5 3.5h3.5l2 5-2.4 1.5a11.5 11.5 0 0 0 5.9 5.9l1.5-2.4 5 2V19a2 2 0 0 1-2 2A17 17 0 0 1 3 5.5a2 2 0 0 1 2-2Z"/></symbol>
+  <symbol id="wa" viewBox="0 0 24 24"><path fill="currentColor" d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2Zm0 18.2a8.2 8.2 0 0 1-4.2-1.2l-.3-.2-3 .8.8-2.9-.2-.3A8.2 8.2 0 1 1 12 20.2Zm4.5-6.1c-.2-.1-1.5-.7-1.7-.8s-.4-.1-.6.1-.7.8-.8 1-.3.2-.5.1a6.7 6.7 0 0 1-3.3-2.9c-.3-.4.2-.4.7-1.3.1-.2 0-.3 0-.4l-.8-1.8c-.2-.5-.4-.4-.6-.4h-.5a1 1 0 0 0-.7.3 3 3 0 0 0-.9 2.2 5.2 5.2 0 0 0 1.1 2.7 11.8 11.8 0 0 0 4.5 4c1.7.7 2.3.8 3.2.6a2.7 2.7 0 0 0 1.8-1.2 2.2 2.2 0 0 0 .1-1.3c0-.1-.2-.2-.5-.3Z"/></symbol>
+  <symbol id="mail" viewBox="0 0 24 24"><rect x="3" y="5" width="18" height="14" rx="2.5" fill="none" stroke="currentColor" stroke-width="1.8"/><path fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" d="m4 7 8 6 8-6"/></symbol>
+  <symbol id="pin" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="1.8" d="M12 21.5s-7.5-6.4-7.5-12.3a7.5 7.5 0 0 1 15 0c0 5.9-7.5 12.3-7.5 12.3Z"/><circle cx="12" cy="9.3" r="2.7" fill="none" stroke="currentColor" stroke-width="1.8"/></symbol>
+  <symbol id="clock" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9" fill="none" stroke="currentColor" stroke-width="1.8"/><path fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" d="M12 7v5l3.2 2"/></symbol>
+  <symbol id="cal" viewBox="0 0 24 24"><rect x="3.5" y="5" width="17" height="15.5" rx="2.5" fill="none" stroke="currentColor" stroke-width="1.8"/><path fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" d="M3.5 10h17M8 3v4M16 3v4"/></symbol>
+  <symbol id="users" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><circle cx="9" cy="8" r="3.5"/><path d="M2.5 20a6.5 6.5 0 0 1 13 0M16 4.6a3.5 3.5 0 0 1 0 6.8M18 14.2a6.5 6.5 0 0 1 3.5 5.8"/></g></symbol>
+  <symbol id="star" viewBox="0 0 24 24"><path fill="currentColor" d="m12 2.8 2.8 5.8 6.3.9-4.6 4.4 1.1 6.3L12 17.2l-5.6 3 1.1-6.3L2.9 9.5l6.3-.9L12 2.8Z"/></symbol>
+  <symbol id="star-half" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="1.5" d="m12 2.8 2.8 5.8 6.3.9-4.6 4.4 1.1 6.3L12 17.2l-5.6 3 1.1-6.3L2.9 9.5l6.3-.9L12 2.8Z"/><path fill="currentColor" d="M12 2.8v14.4l-5.6 3 1.1-6.3L2.9 9.5l6.3-.9Z"/></symbol>
+  <symbol id="check" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" d="m5 12.5 4.5 4.5L19 7.5"/></symbol>
+  <symbol id="arrow" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" d="M4 12h16m-6-6 6 6-6 6"/></symbol>
+  <symbol id="chev-l" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" d="m15 5-7 7 7 7"/></symbol>
+  <symbol id="chev-r" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" d="m9 5 7 7-7 7"/></symbol>
+  <symbol id="chev-u" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" d="m5 15 7-7 7 7"/></symbol>
+  <symbol id="close" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" d="M6 6l12 12M18 6 6 18"/></symbol>
+  <symbol id="menu" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" d="M4 7h16M4 12h16M4 17h10"/></symbol>
+  <symbol id="plus" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" d="M12 5v14M5 12h14"/></symbol>
+  <symbol id="minus" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" d="M5 12h14"/></symbol>
+  <symbol id="zoom" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="10.5" cy="10.5" r="6.5"/><path d="m20 20-4.5-4.5M10.5 8v5M8 10.5h5"/></g></symbol>
+  <symbol id="shield" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round" d="M12 3 4.5 6v5.5c0 4.6 3.2 8.4 7.5 9.5 4.3-1.1 7.5-4.9 7.5-9.5V6L12 3Z"/><path fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" d="m9 12 2 2 4-4"/></symbol>
+  <symbol id="pool" viewBox="0 0 32 32"><g fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M10 21V7.5a2.5 2.5 0 0 1 5 0M19 21V7.5a2.5 2.5 0 0 1 5 0M10 12h9M10 17h9"/><path d="M3 24.5c2 1.5 4 1.5 6 0s4-1.5 6 0 4 1.5 6 0 4-1.5 6 0 3 1.5 3 1.5"/></g></symbol>
+  <symbol id="kids" viewBox="0 0 32 32"><g fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="16" cy="8" r="3.5"/><path d="M10 15.5c2-1.5 4-2 6-2s4 .5 6 2M16 13.5v6M12.5 19.5h7"/><path d="M3 25c2 1.5 4 1.5 6 0s4-1.5 6 0 4 1.5 6 0 4-1.5 6 0 3 1.5 3 1.5"/></g></symbol>
+  <symbol id="beach" viewBox="0 0 32 32"><g fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M16 15c0-5 3-9 7-10M16 15c-1-4-4-7-8.5-7.5M16 15c2-3 6-4.5 10-3.5M16 15c-3-2-7-1.8-10 .5M16 15c1 4 1 8 0 12"/><path d="M4 27.5h24"/></g></symbol>
+  <symbol id="dine" viewBox="0 0 32 32"><g fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M8 4v8a3 3 0 0 0 3 3h0a3 3 0 0 0 3-3V4M11 4v24"/><path d="M23 28V4c-3 1.5-4.5 5-4.5 10v3H23"/></g></symbol>
+  <symbol id="cocktail" viewBox="0 0 32 32"><g fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M5 6h18L14 16 5 6ZM14 16v10M9 27h10M8.5 10h11"/><circle cx="24" cy="8" r="3.5"/></g></symbol>
+  <symbol id="hut" viewBox="0 0 32 32"><g fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 15 16 5l13 10M6 13v14M26 13v14M3 27h26M12 27v-6h8v6"/><path d="M9 11h14"/></g></symbol>
+  <symbol id="wifi" viewBox="0 0 32 32"><g fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><path d="M4 12.5a17 17 0 0 1 24 0M8 17a11 11 0 0 1 16 0M12 21.3a5.5 5.5 0 0 1 8 0"/><circle cx="16" cy="25.5" r="1.3" fill="currentColor"/></g></symbol>
+  <symbol id="park" viewBox="0 0 32 32"><g fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="4" y="4" width="24" height="24" rx="6"/><path d="M12.5 23V9h5a4 4 0 0 1 0 8h-5"/></g></symbol>
+  <symbol id="ac" viewBox="0 0 32 32"><g fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M16 3v26M5 9.5l22 13M27 9.5l-22 13M12.5 4.5 16 8l3.5-3.5M12.5 27.5 16 24l3.5 3.5"/></g></symbol>
+  <symbol id="desk" viewBox="0 0 32 32"><g fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M4 23h24M6 23a10 10 0 0 1 20 0M16 10V7M13.5 7h5M3 27h26"/></g></symbol>
+  <symbol id="bed" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 19V6M3 15h18v4M21 15v-3a3 3 0 0 0-3-3h-7v6"/><circle cx="7" cy="11.5" r="2"/></g></symbol>
+  <symbol id="sun" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><circle cx="12" cy="12" r="4"/><path d="M12 2.5v2M12 19.5v2M4.6 4.6 6 6M18 18l1.4 1.4M2.5 12h2M19.5 12h2M4.6 19.4 6 18M18 6l1.4-1.4"/></g></symbol>
+  <symbol id="fish" viewBox="0 0 32 32"><g fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M28.5 16c-2.5 4.5-6.5 7-11 7-4 0-7.5-2.2-10-5L3 21.5V10.5L7.5 14c2.5-2.8 6-5 10-5 4.5 0 8.5 2.5 11 7Z"/><path d="M15 9.5c-1.5-2-1-4 1.5-5 1.5 1.2 2.5 2.8 2.5 4.6M15.5 23c-.5 1.8.5 3.5 2.5 4.5"/><circle cx="23" cy="14.5" r="1.3" fill="currentColor"/></g></symbol>
+  <symbol id="coffee" viewBox="0 0 32 32"><g fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h17v7a7 7 0 0 1-7 7h-3a7 7 0 0 1-7-7v-7ZM22 14h2a3.5 3.5 0 0 1 0 7h-2.5M11 4c-1 1.5 1 2.5 0 4M16 4c-1 1.5 1 2.5 0 4"/></g></symbol>
+  <symbol id="fb" viewBox="0 0 24 24"><path fill="currentColor" d="M14 8h3V4h-3a4 4 0 0 0-4 4v2H8v4h2v8h4v-8h3l1-4h-4V8.5c0-.3.2-.5.5-.5Z"/></symbol>
+  <symbol id="ig" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/></g><circle cx="17.5" cy="6.5" r="1.3" fill="currentColor"/></symbol>
+  <symbol id="tt" viewBox="0 0 24 24"><path fill="currentColor" d="M16.6 2h-3.4v13.4a2.9 2.9 0 1 1-2.9-2.9c.3 0 .6 0 .9.1V9.1a6.4 6.4 0 1 0 5.4 6.3V8.6a8 8 0 0 0 4.4 1.4V6.6a4.6 4.6 0 0 1-4.4-4.6Z"/></symbol>
+  </defs>
+</svg>
+
+<!-- Barra superior -->
+<div class="topbar">
+  <div class="container">
+    <div class="group">
+      <a href="tel:+50324575566"><svg class="icon"><use href="#phone"/></svg>+503 2457-5566</a>
+      <a href="https://api.whatsapp.com/send?phone=50373137344" target="_blank" rel="noopener"><svg class="icon"><use href="#wa"/></svg>+503 7313-7344</a>
+      <a href="mailto:hotelpuntadiamantes@gmail.com" class="hide-sm"><svg class="icon"><use href="#mail"/></svg>hotelpuntadiamantes@gmail.com</a>
+    </div>
+    <div class="group soc">
+      <span class="txt hide-sm"><svg class="icon"><use href="#pin"/></svg>Playa Metalío, Acajutla</span>
+      <a href="https://www.facebook.com/p/Punta-Diamantes-Hotel-Restaurante-y-Resort-100063671525511/" target="_blank" rel="noopener" aria-label="Facebook"><svg class="icon"><use href="#fb"/></svg></a>
+      <a href="https://www.instagram.com/diamantespunta/" target="_blank" rel="noopener" aria-label="Instagram"><svg class="icon"><use href="#ig"/></svg></a>
+      <a href="https://www.tiktok.com/@punta_diamantes" target="_blank" rel="noopener" aria-label="TikTok"><svg class="icon"><use href="#tt"/></svg></a>
+    </div>
+  </div>
+</div>
+
+<!-- Header -->
+<header class="header" id="header">
+  <div class="container">
+    <a href="#inicio" class="logo" aria-label="Punta Diamantes, inicio">
+      <img class="l-white" src="img/logo-blanco.png" alt="Punta Diamantes">
+      <img class="l-pink" src="img/logo-rosa.png" alt="" aria-hidden="true">
+    </a>
+    <nav aria-label="Principal">
+      <ul class="nav" id="nav">
+        <li><button class="nav-close" aria-label="Cerrar menú"><svg class="icon"><use href="#close"/></svg></button></li>
+        <li><a href="#nosotros">Nosotros</a></li>
+        <li><a href="#habitaciones">Habitaciones</a></li>
+        <li><a href="#daypass">Day Pass</a></li>
+        <li><a href="#restaurante">Restaurante</a></li>
+        <li><a href="#galeria">Galería</a></li>
+        <li><a href="#ubicacion">Ubicación</a></li>
+        <li><a href="#reservar" class="btn btn-pink">Reservar ahora</a></li>
+      </ul>
+    </nav>
+    <button class="burger" aria-label="Abrir menú" aria-controls="nav" aria-expanded="false"><svg class="icon"><use href="#menu"/></svg></button>
+  </div>
+</header>
+<div class="scrim"></div>
+
+<main>
+<!-- HERO -->
+<section class="hero" id="inicio">
+  <div class="slides" aria-hidden="true">
+    <div class="on" style="background-image:url(img/piscina-ranchos-mural.jpg)"></div>
+    <div style="background-image:url(img/edificio-piscina.jpg)"></div>
+    <div style="background-image:url(img/piscina-rancho.jpg)"></div>
+    <div style="background-image:url(img/edificio-palmeras.jpg)"></div>
+  </div>
+  <div class="container">
+    <span class="hero-script">Bienvenidos a Punta Diamantes</span>
+    <h1>Su refugio frente al mar en <em>Playa Metalío</em></h1>
+    <p>Hotel, restaurante y resort en Acajutla, Sonsonate. Habitaciones con aire acondicionado, piscina de agua salada, ranchos junto al mar y la mejor cocina de mariscos.</p>
+    <div class="hero-cta">
+      <a href="#reservar" class="btn btn-pink" data-tipo="estadia">Reservar estadía <svg class="icon"><use href="#arrow"/></svg></a>
+      <a href="#daypass" class="btn btn-outline">Conocer el Day Pass</a>
+    </div>
+    <div class="hero-rating">
+      <b>4.0</b>
+      <span class="stars"><svg class="icon"><use href="#star"/></svg><svg class="icon"><use href="#star"/></svg><svg class="icon"><use href="#star"/></svg><svg class="icon"><use href="#star"/></svg><svg class="icon"><use href="#star-half"/></svg></span>
+      <span>Más de 480 opiniones en Google</span>
+    </div>
+  </div>
+  <div class="hero-dots" aria-label="Fotos de portada"></div>
+</section>
+
+<!-- Reserva rápida -->
+<div class="quickbook">
+  <div class="container">
+    <form class="qb rv" id="quick">
+      <div class="fld">
+        <label for="q-tipo"><svg class="icon"><use href="#bed"/></svg>Tipo</label>
+        <select id="q-tipo"><option value="estadia">Estadía</option><option value="daypass">Day Pass</option></select>
+      </div>
+      <div class="fld">
+        <label for="q-in"><svg class="icon"><use href="#cal"/></svg><span id="q-in-l">Llegada</span></label>
+        <input type="date" id="q-in">
+      </div>
+      <div class="fld" id="q-out-f">
+        <label for="q-out"><svg class="icon"><use href="#cal"/></svg>Salida</label>
+        <input type="date" id="q-out">
+      </div>
+      <div class="fld">
+        <label for="q-pax"><svg class="icon"><use href="#users"/></svg>Huéspedes</label>
+        <select id="q-pax"></select>
+      </div>
+      <button class="btn btn-pink" type="submit">Consultar disponibilidad</button>
+    </form>
+  </div>
+</div>
+
+<!-- NOSOTROS -->
+<section class="sec" id="nosotros">
+  <div class="container about">
+    <div class="collage rv">
+      <div class="a"><img src="img/edificio-balcones.jpg" alt="Edificio de habitaciones con balcones y jardines" loading="lazy"></div>
+      <div class="b"><img src="img/piscina-fuente.jpg" alt="Piscina con fuente frente a las habitaciones" loading="lazy"></div>
+      <div class="badge"><img src="img/diamante-blanco.png" alt=""><b>Frente</b><span>al mar</span></div>
+    </div>
+    <div class="rv d1">
+      <span class="kicker">Bienvenidos</span>
+      <h2 class="h2">Un paraíso tropical a la orilla de <span class="script">Metalío</span></h2>
+      <p class="lead">Punta Diamantes es un hotel familiar rodeado de palmeras, con salida directa a la playa y todo lo necesario para descansar sin salir del lugar.</p>
+      <p>Disfrute de nuestras piscinas de agua salada, ranchos con sombra, restaurante con vista al mar y atardeceres inolvidables en la costa de Sonsonate. Ideal para escapadas en pareja, vacaciones en familia, excursiones y celebraciones.</p>
+      <div class="facts">
+        <div><b>4.0</b><span>Calificación en Google</span></div>
+        <div><b>78K+</b><span>Seguidores en TikTok</span></div>
+        <div><b>7 días</b><span>Abierto toda la semana</span></div>
+      </div>
+      <div class="about-cta">
+        <a href="#habitaciones" class="btn btn-dark">Ver habitaciones</a>
+        <a href="#galeria" class="link-arrow">Recorrer la galería <svg class="icon"><use href="#arrow"/></svg></a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- AMENIDADES -->
+<section class="sec amen">
+  <div class="container">
+    <div class="sec-head center rv">
+      <span class="kicker">Servicios</span>
+      <h2 class="h2">Todo para disfrutar su estadía</h2>
+      <p class="lead">Instalaciones pensadas para relajarse, compartir en familia y aprovechar cada momento junto al mar.</p>
+    </div>
+    <div class="amen-grid" id="amenities"></div>
+  </div>
+</section>
+
+<!-- HABITACIONES -->
+<section class="sec" id="habitaciones">
+  <div class="container">
+    <div class="sec-head center rv">
+      <span class="kicker">Hospedaje</span>
+      <h2 class="h2">Nuestras habitaciones</h2>
+      <p class="lead">Espacios frescos y cómodos con aire acondicionado y baño privado, a pocos pasos de la piscina y la playa.</p>
+    </div>
+    <div class="rooms" id="rooms"></div>
+    <div class="policy rv">
+      <span><svg class="icon"><use href="#clock"/></svg>Check-in desde las 3:00 p. m.</span>
+      <span><svg class="icon"><use href="#clock"/></svg>Check-out hasta la 1:00 p. m.</span>
+      <span><svg class="icon"><use href="#shield"/></svg>Confirmación directa con el hotel</span>
+    </div>
+  </div>
+</section>
+
+<!-- DAY PASS -->
+<section class="sec daypass" id="daypass">
+  <div class="container dp">
+    <div class="rv">
+      <span class="kicker">Pase de día</span>
+      <h2 class="h2">Un día completo de playa y piscina</h2>
+      <p class="lead">No necesita hospedarse para disfrutar Punta Diamantes. Venga con su familia o amigos y aproveche nuestras instalaciones durante todo el día.</p>
+      <ul class="dp-list">
+        <li><span class="ck"><svg class="icon"><use href="#check"/></svg></span>Piscina de agua salada</li>
+        <li><span class="ck"><svg class="icon"><use href="#check"/></svg></span>Piscina para niños</li>
+        <li><span class="ck"><svg class="icon"><use href="#check"/></svg></span>Acceso directo a la playa</li>
+        <li><span class="ck"><svg class="icon"><use href="#check"/></svg></span>Ranchos y zonas de sombra</li>
+        <li><span class="ck"><svg class="icon"><use href="#check"/></svg></span>Restaurante y bar</li>
+        <li><span class="ck"><svg class="icon"><use href="#check"/></svg></span>Parqueo para visitantes</li>
+      </ul>
+    </div>
+    <div class="dp-card rv d2">
+      <span class="script">Disfrute el día</span>
+      <h3>Day Pass</h3>
+      <div class="dp-row"><svg class="icon"><use href="#clock"/></svg><div><b>7:00 a. m. a 8:00 p. m.</b><span>Lunes a domingo</span></div></div>
+      <div class="dp-row"><svg class="icon"><use href="#users"/></svg><div><b>Familias, grupos y excursiones</b><span>Consulte tarifas especiales para grupos</span></div></div>
+      <div class="dp-row"><svg class="icon"><use href="#hut"/></svg><div><b>Reserve su rancho</b><span>Indíquelo en su solicitud</span></div></div>
+      <a href="#reservar" class="btn btn-pink" data-tipo="daypass">Reservar Day Pass <svg class="icon"><use href="#arrow"/></svg></a>
+    </div>
+  </div>
+</section>
+
+<!-- RESTAURANTE -->
+<section class="sec" id="restaurante">
+  <div class="container resto">
+    <div class="rv">
+      <span class="kicker">Restaurante y bar</span>
+      <h2 class="h2">Sabores del mar con <span class="script">vista a la playa</span></h2>
+      <p class="lead">Cocina salvadoreña y mariscos frescos para desayunar, almorzar y cenar. Abierto para huéspedes y visitantes.</p>
+      <div class="dish"><div class="ic"><svg class="icon"><use href="#fish"/></svg></div><div><h4>Mariscos de la costa</h4><p>Pescado frito, cócteles, ceviches y especialidades del día.</p></div></div>
+      <div class="dish"><div class="ic"><svg class="icon"><use href="#coffee"/></svg></div><div><h4>Desayunos a la carta</h4><p>Desayunos típicos salvadoreños para comenzar el día frente al mar.</p></div></div>
+      <div class="dish"><div class="ic"><svg class="icon"><use href="#cocktail"/></svg></div><div><h4>Bar junto a la piscina</h4><p>Cócteles, bebidas frías y refrescos para disfrutar bajo las palmeras.</p></div></div>
+      <div class="btns">
+        <a href="https://api.whatsapp.com/send?phone=50373137344&text=Hola%2C%20me%20gustar%C3%ADa%20recibir%20el%20men%C3%BA%20del%20restaurante%20Punta%20Diamantes." target="_blank" rel="noopener" class="btn btn-dark"><svg class="icon"><use href="#wa"/></svg>Solicitar menú</a>
+        <a href="tel:+50324575566" class="btn btn-line"><svg class="icon"><use href="#phone"/></svg>2457-5566</a>
+      </div>
+    </div>
+    <div class="resto-pics rv d1">
+      <div class="p p1"><img src="img/rancho-bar.jpg" alt="Rancho bar junto a la piscina" loading="lazy"></div>
+      <div class="p p2"><img src="img/bar-bebidas.jpg" alt="Bar con bebidas" loading="lazy"></div>
+      <div class="p p3"><img src="img/palmeras-rancho.jpg" alt="Rancho entre palmeras" loading="lazy"></div>
+      <div class="stamp">Buen<br>provecho</div>
+    </div>
+  </div>
+</section>
+
+<!-- GALERÍA -->
+<section class="sec gal-sec" id="galeria">
+  <div class="container">
+    <div class="sec-head center rv">
+      <span class="kicker">Galería</span>
+      <h2 class="h2">Conozca Punta Diamantes</h2>
+      <p class="lead">Habitaciones, piscinas, restaurante e instalaciones.</p>
+    </div>
+    <div class="filters rv" id="filters">
+      <button class="on" data-f="all">Todas</button>
+      <button data-f="habitaciones">Habitaciones</button>
+      <button data-f="piscinas">Piscinas</button>
+      <button data-f="restaurante">Restaurante y bar</button>
+      <button data-f="instalaciones">Instalaciones</button>
+    </div>
+    <div class="gallery" id="gallery"></div>
+  </div>
+</section>
+
+<!-- OPINIONES -->
+<section class="sec" id="opiniones">
+  <div class="container">
+    <div class="sec-head center rv">
+      <span class="kicker">Opiniones</span>
+      <h2 class="h2">Lo que dicen nuestros huéspedes</h2>
+      <p class="lead">Calificaciones publicadas por huéspedes en las principales plataformas de viaje.</p>
+    </div>
+    <div class="scores">
+      <div class="score rv"><div class="big">4.0<small> / 5</small></div><div class="stars"><svg class="icon"><use href="#star"/></svg><svg class="icon"><use href="#star"/></svg><svg class="icon"><use href="#star"/></svg><svg class="icon"><use href="#star"/></svg><svg class="icon"><use href="#star-half"/></svg></div><b>Google</b><span>Más de 480 opiniones</span></div>
+      <div class="score rv d1"><div class="big">8.2<small> / 10</small></div><div class="stars"><svg class="icon"><use href="#star"/></svg><svg class="icon"><use href="#star"/></svg><svg class="icon"><use href="#star"/></svg><svg class="icon"><use href="#star"/></svg><svg class="icon"><use href="#star-half"/></svg></div><b>Hoteles.com</b><span>Calificación de huéspedes</span></div>
+      <div class="score rv d2"><div class="big">7.6<small> / 10</small></div><div class="stars"><svg class="icon"><use href="#star"/></svg><svg class="icon"><use href="#star"/></svg><svg class="icon"><use href="#star"/></svg><svg class="icon"><use href="#star"/></svg><svg class="icon"><use href="#star-half"/></svg></div><b>Trip.com</b><span>58 opiniones de huéspedes</span></div>
+    </div>
+    <div class="loved rv">
+      <span><svg class="icon"><use href="#check"/></svg>Acceso directo a la playa</span>
+      <span><svg class="icon"><use href="#check"/></svg>Comida deliciosa a buen precio</span>
+      <span><svg class="icon"><use href="#check"/></svg>Piscina renovada</span>
+      <span><svg class="icon"><use href="#check"/></svg>Atardeceres increíbles</span>
+      <span><svg class="icon"><use href="#check"/></svg>Instalaciones amplias</span>
+    </div>
+  </div>
+</section>
+
+<!-- RESERVAS -->
+<section class="sec book-sec" id="reservar">
+  <div class="container">
+    <div class="book rv">
+      <aside class="book-side">
+        <img class="logo-s" src="img/logo-blanco.png" alt="Punta Diamantes">
+        <h3>Reserve directamente con nosotros</h3>
+        <p>Complete el formulario y su solicitud llegará a nuestro WhatsApp con todos sus datos.</p>
+        <ol class="steps">
+          <li><div><b>Complete sus datos</b><span>Fechas, número de personas y tipo de habitación.</span></div></li>
+          <li><div><b>Envíe por WhatsApp</b><span>Se abrirá el chat con su solicitud lista para enviar.</span></div></li>
+          <li><div><b>Reciba su confirmación</b><span>Le respondemos con disponibilidad, tarifa y forma de pago.</span></div></li>
+        </ol>
+        <div class="contact">
+          <a href="https://api.whatsapp.com/send?phone=50373137344" target="_blank" rel="noopener"><svg class="icon"><use href="#wa"/></svg>+503 7313-7344</a>
+          <a href="tel:+50324575566"><svg class="icon"><use href="#phone"/></svg>+503 2457-5566</a>
+        </div>
+      </aside>
+
+      <form class="bk" id="bookingForm" novalidate>
+        <div class="seg" role="radiogroup" aria-label="Tipo de reservación">
+          <input type="radio" name="tipo" id="t-stay" value="estadia" checked>
+          <label for="t-stay"><span class="ic"><svg class="icon"><use href="#bed"/></svg></span><span><b>Estadía</b><span class="sub">Hospedaje por noches</span></span></label>
+          <input type="radio" name="tipo" id="t-day" value="daypass">
+          <label for="t-day"><span class="ic"><svg class="icon"><use href="#sun"/></svg></span><span><b>Day Pass</b><span class="sub">Pase de día</span></span></label>
+        </div>
+
+        <div class="fgrid">
+          <div class="f full"><label for="nombre">Nombre completo <i>*</i></label><input id="nombre" autocomplete="name" placeholder="Nombre y apellido"><span class="err">Ingrese su nombre completo.</span></div>
+          <div class="f"><label for="telefono">Teléfono / WhatsApp <i>*</i></label><input id="telefono" type="tel" inputmode="tel" autocomplete="tel" placeholder="7000-0000"><span class="err">Ingrese un número válido.</span></div>
+          <div class="f"><label for="correo">Correo electrónico</label><input id="correo" type="email" autocomplete="email" placeholder="Opcional"><span class="err">Revise el correo.</span></div>
+
+          <div class="f stay"><label for="entrada">Fecha de llegada <i>*</i></label><input id="entrada" type="date"><span class="err">Seleccione la fecha de llegada.</span></div>
+          <div class="f stay"><label for="salida">Fecha de salida <i>*</i></label><input id="salida" type="date"><span class="err">Debe ser posterior a la llegada.</span></div>
+          <div class="f stay"><label for="habitacion">Habitación <i>*</i></label><select id="habitacion"><option value="">Seleccione una opción</option></select><span class="err">Seleccione una habitación.</span></div>
+          <div class="f stay"><label for="cantidad">Nº de habitaciones</label><div class="stepper"><button type="button" data-s="-1" data-t="cantidad" aria-label="Menos habitaciones"><svg class="icon"><use href="#minus"/></svg></button><input id="cantidad" type="number" min="1" max="10" value="1" inputmode="numeric"><button type="button" data-s="1" data-t="cantidad" aria-label="Más habitaciones"><svg class="icon"><use href="#plus"/></svg></button></div></div>
+
+          <div class="f day full hidden"><label for="visita">Fecha de visita <i>*</i></label><input id="visita" type="date"><span class="err">Seleccione la fecha de su visita.</span></div>
+
+          <div class="f"><label for="adultos">Adultos <i>*</i></label><div class="stepper"><button type="button" data-s="-1" data-t="adultos" aria-label="Menos adultos"><svg class="icon"><use href="#minus"/></svg></button><input id="adultos" type="number" min="1" max="80" value="2" inputmode="numeric"><button type="button" data-s="1" data-t="adultos" aria-label="Más adultos"><svg class="icon"><use href="#plus"/></svg></button></div></div>
+          <div class="f"><label for="ninos">Niños</label><div class="stepper"><button type="button" data-s="-1" data-t="ninos" aria-label="Menos niños"><svg class="icon"><use href="#minus"/></svg></button><input id="ninos" type="number" min="0" max="80" value="0" inputmode="numeric"><button type="button" data-s="1" data-t="ninos" aria-label="Más niños"><svg class="icon"><use href="#plus"/></svg></button></div></div>
+
+          <div class="f full"><label for="llegada">Hora aproximada de llegada</label>
+            <select id="llegada"><option value="">Sin definir</option><option>7:00 a 9:00 a. m.</option><option>9:00 a 11:00 a. m.</option><option>11:00 a. m. a 1:00 p. m.</option><option>1:00 a 3:00 p. m.</option><option>3:00 a 5:00 p. m.</option><option>Después de las 5:00 p. m.</option></select></div>
+          <div class="f full"><label for="comentarios">Comentarios o solicitudes especiales</label><textarea id="comentarios" placeholder="Celebraciones, cama adicional, reserva de rancho, alergias alimentarias..."></textarea></div>
+          <div class="summary" id="summary"><svg class="icon"><use href="#cal"/></svg><span></span></div>
+        </div>
+
+        <button type="submit" class="btn btn-wa send"><svg class="icon"><use href="#wa"/></svg>Enviar solicitud por WhatsApp</button>
+        <p class="note"><svg class="icon"><use href="#shield"/></svg>Sus datos se envían solo al WhatsApp oficial del hotel.</p>
+      </form>
+    </div>
+  </div>
+</section>
+
+<!-- UBICACIÓN -->
+<section class="sec" id="ubicacion" style="padding-top:40px">
+  <div class="container">
+    <div class="loc rv">
+      <div class="map"><iframe title="Mapa de Punta Diamantes, Playa Metalío" loading="lazy" referrerpolicy="no-referrer-when-downgrade" src="https://maps.google.com/maps?q=13.6214278,-89.8715958&z=15&output=embed"></iframe></div>
+      <div class="loc-card">
+        <span class="kicker">Cómo llegar</span>
+        <h3>Playa Metalío, Acajutla</h3>
+        <div class="li"><svg class="icon"><use href="#pin"/></svg><div><b>Dirección</b><span>Playa Metalío, Acajutla, Sonsonate, El Salvador</span></div></div>
+        <div class="li"><svg class="icon"><use href="#clock"/></svg><div><b>Horario</b><span>Lunes a domingo, 7:00 a. m. a 8:00 p. m.</span></div></div>
+        <div class="li"><svg class="icon"><use href="#phone"/></svg><div><b>Reservaciones</b><span>+503 2457-5566 · WhatsApp +503 7313-7344</span></div></div>
+        <div class="nav-apps">
+          <a class="app" href="https://waze.com/ul?ll=13.6214278,-89.8715958&navigate=yes" target="_blank" rel="noopener">
+            <svg viewBox="0 0 48 48" aria-hidden="true"><rect width="48" height="48" rx="12" fill="#33CCFF"/><path fill="#fff" stroke="#0B2A3A" stroke-width="2" d="M24 10c-8 0-13.5 5.7-13.5 12.5 0 2.4-1 4-2.5 5 1.4 2.3 3.9 3.9 6.5 4.4h17C37 30.6 37.5 27 37.5 22.5 37.5 15.7 32 10 24 10Z"/><circle cx="19" cy="34" r="3" fill="#0B2A3A"/><circle cx="31" cy="34" r="3" fill="#0B2A3A"/><circle cx="19.5" cy="20.5" r="1.6" fill="#0B2A3A"/><circle cx="28.5" cy="20.5" r="1.6" fill="#0B2A3A"/><path fill="none" stroke="#0B2A3A" stroke-width="2" stroke-linecap="round" d="M18.5 25.5c1.5 2.4 9.5 2.4 11 0"/></svg>
+            <span><small>Abrir en</small>Waze</span></a>
+          <a class="app" href="https://www.google.com/maps/dir/?api=1&destination=13.6214278,-89.8715958" target="_blank" rel="noopener">
+            <svg viewBox="0 0 48 48" aria-hidden="true"><rect width="48" height="48" rx="12" fill="#F1F3F4"/><path fill="#EA4335" d="M24 8a11 11 0 0 0-11 11c0 8.3 11 21 11 21s11-12.7 11-21A11 11 0 0 0 24 8Z"/><path fill="#34A853" d="M13 19c0 8.3 11 21 11 21l5.5-15.5Z" opacity=".9"/><path fill="#4285F4" d="M35 19a11 11 0 0 0-3.2-7.8L24 19l5.5 5.5Z" opacity=".9"/><circle cx="24" cy="19" r="4.2" fill="#fff"/></svg>
+            <span><small>Abrir en</small>Google Maps</span></a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- REDES -->
+<section class="social-band">
+  <div class="container sb">
+    <div>
+      <span class="script">Síganos en redes</span>
+      <h2>Viva la experiencia Punta Diamantes</h2>
+    </div>
+    <div class="sb-links">
+      <a href="https://www.tiktok.com/@punta_diamantes" target="_blank" rel="noopener"><span class="ci"><svg class="icon"><use href="#tt"/></svg></span><span>@punta_diamantes<small>78.8K seguidores</small></span></a>
+      <a href="https://www.instagram.com/diamantespunta/" target="_blank" rel="noopener"><span class="ci"><svg class="icon"><use href="#ig"/></svg></span><span>@diamantespunta<small>Instagram</small></span></a>
+      <a href="https://www.facebook.com/p/Punta-Diamantes-Hotel-Restaurante-y-Resort-100063671525511/" target="_blank" rel="noopener"><span class="ci"><svg class="icon"><use href="#fb"/></svg></span><span>Punta Diamantes<small>Facebook</small></span></a>
+    </div>
+  </div>
+</section>
+</main>
+
+<footer>
+  <div class="container">
+    <div class="ft">
+      <div>
+        <img src="img/logo-blanco.png" alt="Punta Diamantes">
+        <p>Hotel, restaurante y resort frente al mar en Playa Metalío. El mejor lugar para disfrutar de sus vacaciones en El Salvador.</p>
+        <div class="fsoc">
+          <a href="https://www.facebook.com/p/Punta-Diamantes-Hotel-Restaurante-y-Resort-100063671525511/" target="_blank" rel="noopener" aria-label="Facebook"><svg class="icon"><use href="#fb"/></svg></a>
+          <a href="https://www.instagram.com/diamantespunta/" target="_blank" rel="noopener" aria-label="Instagram"><svg class="icon"><use href="#ig"/></svg></a>
+          <a href="https://www.tiktok.com/@punta_diamantes" target="_blank" rel="noopener" aria-label="TikTok"><svg class="icon"><use href="#tt"/></svg></a>
+          <a href="https://api.whatsapp.com/send?phone=50373137344" target="_blank" rel="noopener" aria-label="WhatsApp"><svg class="icon"><use href="#wa"/></svg></a>
+        </div>
+      </div>
+      <div>
+        <h4>Explorar</h4>
+        <ul>
+          <li><a href="#nosotros">Nosotros</a></li>
+          <li><a href="#habitaciones">Habitaciones</a></li>
+          <li><a href="#daypass">Day Pass</a></li>
+          <li><a href="#restaurante">Restaurante</a></li>
+          <li><a href="#galeria">Galería</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Horarios</h4>
+        <ul>
+          <li>Lunes a domingo</li>
+          <li>7:00 a. m. a 8:00 p. m.</li>
+          <li>Check-in: 3:00 p. m.</li>
+          <li>Check-out: 1:00 p. m.</li>
+        </ul>
+      </div>
+      <div>
+        <h4>Contacto</h4>
+        <ul class="fc">
+          <li><svg class="icon"><use href="#pin"/></svg><span>Playa Metalío, Acajutla, Sonsonate, El Salvador</span></li>
+          <li><svg class="icon"><use href="#phone"/></svg><a href="tel:+50324575566">+503 2457-5566</a></li>
+          <li><svg class="icon"><use href="#wa"/></svg><a href="https://api.whatsapp.com/send?phone=50373137344" target="_blank" rel="noopener">+503 7313-7344</a></li>
+          <li><svg class="icon"><use href="#mail"/></svg><a href="mailto:hotelpuntadiamantes@gmail.com">hotelpuntadiamantes@gmail.com</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="fbottom">
+      <span>© <span id="year"></span> Punta Diamantes. Hotel, Restaurante y Resort.</span>
+      <span>Playa Metalío, Acajutla, Sonsonate, El Salvador</span>
+    </div>
+  </div>
+</footer>
+
+<a class="fab" href="https://api.whatsapp.com/send?phone=50373137344&text=Hola%2C%20quisiera%20informaci%C3%B3n%20sobre%20Punta%20Diamantes." target="_blank" rel="noopener" aria-label="Escríbanos por WhatsApp"><span class="fab-tip">¿Necesita ayuda? Escríbanos</span><svg class="icon"><use href="#wa"/></svg></a>
+<button class="totop" aria-label="Volver arriba"><svg class="icon"><use href="#chev-u"/></svg></button>
+
+<div class="lightbox" id="lightbox" role="dialog" aria-modal="true" aria-label="Foto ampliada">
+  <button class="lb lb-x" aria-label="Cerrar"><svg class="icon"><use href="#close"/></svg></button>
+  <button class="lb lb-p" aria-label="Anterior"><svg class="icon"><use href="#chev-l"/></svg></button>
+  <figure><img alt=""><figcaption></figcaption></figure>
+  <button class="lb lb-n" aria-label="Siguiente"><svg class="icon"><use href="#chev-r"/></svg></button>
+</div>
+
+<script>
+/* ================= CONFIGURACIÓN ================= */
+const WHATSAPP = "50373137344"; // Número que recibe las reservaciones (503 + número, sin espacios)
+
+const AMENITIES = [
+  ["pool","Piscina de agua salada","Para adultos y familias"],
+  ["kids","Piscina para niños","Área especial para los pequeños"],
+  ["beach","Acceso a la playa","Salida directa al mar"],
+  ["dine","Restaurante","Cocina local y mariscos"],
+  ["cocktail","Bar","Bebidas junto a la piscina"],
+  ["hut","Ranchos","Sombra frente al mar"],
+  ["ac","Aire acondicionado","En todas las habitaciones"],
+  ["wifi","Wi-Fi gratuito","Conexión para huéspedes"],
+  ["park","Parqueo gratuito","Dentro de las instalaciones"],
+  ["desk","Recepción","Atención personalizada"],
+];
+
+const ROOMS = [
+  { id:"matrimonial", name:"Habitación Matrimonial", tag:"Parejas", img:"img/habitacion-matrimonial.jpg",
+    text:"Cama matrimonial, ambiente fresco y tranquilo, ideal para una escapada en pareja.", cap:"2 personas",
+    feats:[["users","2 personas"],["ac","A/C"],["wifi","Wi-Fi"]] },
+  { id:"doble", name:"Habitación Doble", tag:"Amigos", img:"img/habitacion-doble-camas.jpg",
+    text:"Dos camas, closet y baño privado. Perfecta para amigos o familias pequeñas.", cap:"2 a 4 personas",
+    feats:[["users","Hasta 4"],["ac","A/C"],["wifi","Wi-Fi"]] },
+  { id:"familiar", name:"Habitación Familiar", tag:"Familias", img:"img/habitacion-queen.jpg",
+    text:"Opciones triples, cuádruples y familiares con más espacio para todo el grupo.", cap:"3 a 6 personas",
+    feats:[["users","Hasta 6"],["ac","A/C"],["wifi","Wi-Fi"]] },
+];
+
+// cat: habitaciones | piscinas | restaurante | instalaciones ; size: "" | "w" (ancha) | "t" (alta) | "w t"
+const GALLERY = [
+  { src:"img/piscina-ranchos-mural.jpg", cat:"piscinas", label:"Piscina y ranchos", size:"w t" },
+  { src:"img/habitacion-matrimonial.jpg", cat:"habitaciones", label:"Habitación matrimonial" },
+  { src:"img/escalinata-bandera.jpg", cat:"instalaciones", label:"Escalinata principal", size:"t" },
+  { src:"img/rancho-bar.jpg", cat:"restaurante", label:"Rancho bar" },
+  { src:"img/edificio-dos-plantas.jpg", cat:"instalaciones", label:"Edificio de habitaciones", size:"t" },
+  { src:"img/piscina-rancho.jpg", cat:"piscinas", label:"Piscina principal", size:"w" },
+  { src:"img/habitacion-doble-camas.jpg", cat:"habitaciones", label:"Habitación doble" },
+  { src:"img/bar-bebidas.jpg", cat:"restaurante", label:"Bar" },
+  { src:"img/habitacion-queen.jpg", cat:"habitaciones", label:"Habitación familiar" },
+  { src:"img/edificio-balcones.jpg", cat:"instalaciones", label:"Balcones y jardín", size:"w" },
+  { src:"img/piscina-fuente.jpg", cat:"piscinas", label:"Piscina con fuente" },
+  { src:"img/palmeras-rancho.jpg", cat:"restaurante", label:"Rancho entre palmeras" },
+  { src:"img/edificio-palmeras.jpg", cat:"instalaciones", label:"Áreas verdes", size:"w" },
+  { src:"img/entrada.jpg", cat:"instalaciones", label:"Entrada principal", size:"w" },
+  { src:"img/parqueo.jpg", cat:"instalaciones", label:"Parqueo" },
+];
+/* ================================================= */
+
+const $ = (s, e=document) => e.querySelector(s);
+const $$ = (s, e=document) => [...e.querySelectorAll(s)];
+const ico = id => `<svg class="icon"><use href="#${id}"/></svg>`;
+
+// Render de secciones
+$("#amenities").innerHTML = AMENITIES.map((a,i)=>`<div class="am rv d${i%5}"><div class="ic">${ico(a[0])}</div><h4>${a[1]}</h4><p>${a[2]}</p></div>`).join("");
+$("#rooms").innerHTML = ROOMS.map((r,i)=>`
+  <article class="room rv d${i}">
+    <div class="pic"><img src="${r.img}" alt="${r.name}" loading="lazy"><span class="tag">${r.tag}</span></div>
+    <div class="body">
+      <h3>${r.name}</h3><p>${r.text}</p>
+      <ul>${r.feats.map(f=>`<li>${ico(f[0])}${f[1]}</li>`).join("")}</ul>
+      <div class="foot"><small>Tarifa<b>A consultar</b></small><a href="#reservar" class="btn btn-dark" data-room="${r.id}">Reservar</a></div>
+    </div>
+  </article>`).join("");
+$("#habitacion").insertAdjacentHTML("beforeend", ROOMS.map(r=>`<option value="${r.id}">${r.name} (${r.cap})</option>`).join(""));
+$("#gallery").innerHTML = GALLERY.map((g,i)=>`<a class="gi ${g.size||""}" href="${g.src}" data-i="${i}" data-cat="${g.cat}"><img src="${g.src}" alt="${g.label}" loading="lazy"><span class="cap">${g.label}${ico("zoom")}</span></a>`).join("");
+$("#q-pax").innerHTML = Array.from({length:12},(_,i)=>`<option value="${i+1}" ${i===1?"selected":""}>${i+1} ${i?"personas":"persona"}</option>`).join("") + `<option value="13">Grupo (13 o más)</option>`;
+
+// Slider de portada
+const slides=$$(".slides div"), dots=$(".hero-dots"); let si=0, timer;
+dots.innerHTML = slides.map((_,i)=>`<button aria-label="Foto ${i+1}" class="${i?"":"on"}"></button>`).join("");
+function go(n){ slides[si].classList.remove("on"); dots.children[si].classList.remove("on"); si=(n+slides.length)%slides.length; slides[si].classList.add("on"); dots.children[si].classList.add("on"); }
+function auto(){ clearInterval(timer); timer=setInterval(()=>go(si+1),6000); }
+[...dots.children].forEach((d,i)=>d.onclick=()=>{go(i);auto();}); auto();
+
+// Header, menú y botón subir
+const header=$("#header"), topbar=$(".topbar"), nav=$("#nav"), burger=$(".burger"), scrim=$(".scrim"), totop=$(".totop");
+function onScroll(){ header.classList.toggle("fixed", scrollY>(topbar.offsetHeight+160)); totop.classList.toggle("show", scrollY>900); }
+addEventListener("scroll", onScroll, {passive:true}); onScroll();
+function menu(o){ nav.classList.toggle("open",o); scrim.classList.toggle("show",o); burger.setAttribute("aria-expanded",o); document.body.style.overflow=o?"hidden":""; }
+burger.onclick=()=>menu(true); scrim.onclick=()=>menu(false); $(".nav-close").onclick=()=>menu(false);
+$$("#nav a").forEach(a=>a.addEventListener("click",()=>menu(false)));
+totop.onclick=()=>scrollTo({top:0,behavior:"smooth"});
+const navLinks=$$("#nav a:not(.btn)");
+const navIO=new IntersectionObserver(es=>es.forEach(e=>{ if(e.isIntersecting) navLinks.forEach(a=>a.classList.toggle("active",a.getAttribute("href")==="#"+e.target.id)); }),{rootMargin:"-45% 0px -50% 0px"});
+$$("main section[id]").forEach(s=>navIO.observe(s));
+
+// Animación al hacer scroll
+const io=new IntersectionObserver(es=>es.forEach(e=>{ if(e.isIntersecting){e.target.classList.add("in");io.unobserve(e.target);} }),{threshold:.12,rootMargin:"0px 0px -40px 0px"});
+$$(".rv").forEach(el=>io.observe(el));
+
+// Galería
+$$("#filters button").forEach(b=>b.onclick=()=>{ $$("#filters button").forEach(x=>x.classList.toggle("on",x===b)); $$(".gi").forEach(g=>g.classList.toggle("hide", b.dataset.f!=="all" && g.dataset.cat!==b.dataset.f)); });
+const lb=$("#lightbox"); let li=0;
+const vis=()=>$$(".gi:not(.hide)");
+function show(){ const v=vis(); li=(li+v.length)%v.length; const g=GALLERY[v[li].dataset.i]; $("img",lb).src=g.src; $("img",lb).alt=g.label; $("figcaption",lb).textContent=g.label; }
+function closeLb(){ lb.classList.remove("open"); document.body.style.overflow=""; }
+$("#gallery").addEventListener("click",e=>{ const a=e.target.closest(".gi"); if(!a) return; e.preventDefault(); li=vis().indexOf(a); show(); lb.classList.add("open"); document.body.style.overflow="hidden"; });
+$(".lb-x").onclick=closeLb; $(".lb-p").onclick=()=>{li--;show();}; $(".lb-n").onclick=()=>{li++;show();};
+lb.addEventListener("click",e=>{ if(e.target===lb||e.target.tagName==="FIGURE") closeLb(); });
+addEventListener("keydown",e=>{ if(!lb.classList.contains("open")) return; if(e.key==="Escape")closeLb(); if(e.key==="ArrowLeft"){li--;show();} if(e.key==="ArrowRight"){li++;show();} });
+
+/* ===== Fechas ===== */
+const pad=n=>String(n).padStart(2,"0");
+const iso=d=>`${d.getFullYear()}-${pad(d.getMonth()+1)}-${pad(d.getDate())}`;
+const parse=v=>{ if(!v) return null; const [y,m,d]=v.split("-").map(Number); return new Date(y,m-1,d); };
+const addDays=(v,n)=>{ const d=parse(v); d.setDate(d.getDate()+n); return iso(d); };
+const fmt=v=>{ const s=parse(v).toLocaleDateString("es-SV",{weekday:"long",day:"numeric",month:"long",year:"numeric"}); return s.charAt(0).toUpperCase()+s.slice(1); };
+const today=new Date(); today.setHours(0,0,0,0);
+["q-in","q-out","entrada","salida","visita"].forEach(id=>$("#"+id).min=iso(today));
+function pairDates(a,b){ $("#"+a).addEventListener("change",()=>{ const v=$("#"+a).value; if(!v) return; $("#"+b).min=addDays(v,1); if(!$("#"+b).value||$("#"+b).value<=v) $("#"+b).value=addDays(v,1); update(); }); }
+pairDates("q-in","q-out"); pairDates("entrada","salida");
+
+/* ===== Reserva rápida ===== */
+$("#q-tipo").onchange=()=>{ const d=$("#q-tipo").value==="daypass"; $("#q-out-f").classList.toggle("hidden",d); $("#q-in-l").textContent=d?"Fecha de visita":"Llegada"; };
+$("#quick").addEventListener("submit",e=>{
+  e.preventDefault();
+  const t=$("#q-tipo").value; setTipo(t);
+  $("#adultos").value=Math.min(+$("#q-pax").value,80);
+  if(t==="estadia"){ if($("#q-in").value){ $("#entrada").value=$("#q-in").value; $("#salida").min=addDays($("#q-in").value,1);} if($("#q-out").value) $("#salida").value=$("#q-out").value; }
+  else if($("#q-in").value) $("#visita").value=$("#q-in").value;
+  update(); $("#reservar").scrollIntoView({behavior:"smooth"}); setTimeout(()=>$("#nombre").focus({preventScroll:true}),800);
+});
+
+/* ===== Formulario ===== */
+const form=$("#bookingForm");
+const tipo=()=>form.querySelector('input[name="tipo"]:checked').value;
+function setTipo(t){ $(t==="daypass"?"#t-day":"#t-stay").checked=true; $$(".stay",form).forEach(e=>e.classList.toggle("hidden",t!=="estadia")); $$(".day",form).forEach(e=>e.classList.toggle("hidden",t!=="daypass")); update(); }
+$$('input[name="tipo"]').forEach(r=>r.onchange=()=>setTipo(tipo()));
+document.addEventListener("click",e=>{
+  const r=e.target.closest("[data-room]"); if(r){ setTipo("estadia"); $("#habitacion").value=r.dataset.room; update(); }
+  const t=e.target.closest("[data-tipo]"); if(t) setTipo(t.dataset.tipo);
+});
+$$(".stepper button").forEach(b=>b.onclick=()=>{ const i=$("#"+b.dataset.t); i.value=Math.max(+i.min,Math.min(+i.max,(+i.value||0)+ +b.dataset.s)); update(); });
+form.addEventListener("input",e=>{ e.target.closest(".f")?.classList.remove("bad"); update(); });
+
+function nights(){ const a=parse($("#entrada").value), b=parse($("#salida").value); return a&&b&&b>a?Math.round((b-a)/864e5):0; }
+function update(){
+  const s=$("#summary"), a=+$("#adultos").value||0, n=+$("#ninos").value||0, p=a+n; let t="";
+  if(tipo()==="estadia"){ const k=nights(); if(k) t=`${k} ${k>1?"noches":"noche"} · ${a} ${a===1?"adulto":"adultos"}${n?` y ${n} ${n===1?"niño":"niños"}`:""}`; }
+  else if($("#visita").value) t=`Day Pass para ${p} ${p===1?"persona":"personas"} · ${fmt($("#visita").value)}`;
+  $("span",s).textContent=t; s.classList.toggle("show",!!t);
+}
+function bad(id){ const f=$("#"+id).closest(".f"); f.classList.add("bad"); return f; }
+function validate(){
+  $$(".f.bad",form).forEach(f=>f.classList.remove("bad")); const errs=[];
+  if($("#nombre").value.trim().length<3) errs.push(bad("nombre"));
+  if($("#telefono").value.replace(/\D/g,"").length<8) errs.push(bad("telefono"));
+  const c=$("#correo").value.trim(); if(c&&!/^\S+@\S+\.\S+$/.test(c)) errs.push(bad("correo"));
+  if(tipo()==="estadia"){
+    const a=parse($("#entrada").value), b=parse($("#salida").value);
+    if(!a||a<today) errs.push(bad("entrada"));
+    if(!a||!b||b<=a) errs.push(bad("salida"));
+    if(!$("#habitacion").value) errs.push(bad("habitacion"));
+  } else { const v=parse($("#visita").value); if(!v||v<today) errs.push(bad("visita")); }
+  if(errs.length){ errs[0].scrollIntoView({behavior:"smooth",block:"center"}); $("input,select",errs[0]).focus({preventScroll:true}); }
+  return !errs.length;
+}
+form.addEventListener("submit",e=>{
+  e.preventDefault(); if(!validate()) return;
+  const v=id=>$("#"+id).value.trim(), a=+v("adultos")||0, n=+v("ninos")||0, L=[];
+  const head=t=>{ L.push(`*SOLICITUD DE RESERVACIÓN - ${t}*`,"Punta Diamantes | Hotel, Restaurante y Resort","","*DATOS DEL HUÉSPED*",`Nombre: ${v("nombre")}`,`Teléfono: ${v("telefono")}`); if(v("correo")) L.push(`Correo: ${v("correo")}`); L.push(""); };
+  if(tipo()==="estadia"){
+    const r=ROOMS.find(x=>x.id===v("habitacion"));
+    head("ESTADÍA");
+    L.push("*DETALLE DE LA ESTADÍA*",`Llegada: ${fmt(v("entrada"))}`,`Salida: ${fmt(v("salida"))}`,`Noches: ${nights()}`,`Habitación: ${r.name}`,`Cantidad de habitaciones: ${v("cantidad")}`);
+  } else {
+    head("DAY PASS");
+    L.push("*DETALLE DEL DAY PASS*",`Fecha de visita: ${fmt(v("visita"))}`);
+  }
+  L.push(`Adultos: ${a}`,`Niños: ${n}`,`Total de personas: ${a+n}`);
+  if(v("llegada")) L.push(`Hora aproximada de llegada: ${v("llegada")}`);
+  if(v("comentarios")) L.push("","*COMENTARIOS*",v("comentarios"));
+  L.push("","Quedo atento(a) a la confirmación de disponibilidad y tarifa. Gracias.");
+  const url=`https://api.whatsapp.com/send?phone=${WHATSAPP}&text=${encodeURIComponent(L.join("\n"))}`;
+  const w=window.open(url,"_blank"); if(w) w.opener=null; else location.href=url;
+});
+
+$("#year").textContent=new Date().getFullYear();
+setTipo("estadia");
+</script>
+</body>
+</html>
