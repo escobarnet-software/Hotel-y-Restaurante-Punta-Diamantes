@@ -74,7 +74,7 @@ h1,h2,h3,h4{font-family:var(--serif);font-weight:400;color:var(--ink);line-heigh
 /* ===== Header ===== */
 .header{position:fixed;top:0;left:0;right:0;z-index:60;transition:background .4s,box-shadow .4s,transform .4s}
 .header .container{display:flex;align-items:center;justify-content:space-between;height:100px;transition:height .4s}
-.header.solid{background:rgba(255,255,255,.97);backdrop-filter:blur(10px);box-shadow:0 10px 30px -14px rgba(43,26,36,.25)}
+.header.solid{background:#fff;box-shadow:0 10px 30px -14px rgba(43,26,36,.25)}
 .header.solid .container{height:78px}
 .logo{position:relative;display:block;height:68px;width:112px;transition:all .4s}
 .header.solid .logo{height:52px;width:86px}
@@ -98,7 +98,9 @@ h1,h2,h3,h4{font-family:var(--serif);font-weight:400;color:var(--ink);line-heigh
   .nav a::after{display:none}
   .nav .btn{margin-top:26px;width:100%}
   .nav-close{position:absolute;top:26px;right:24px;width:46px;height:46px;border-radius:50%;border:1px solid var(--line);background:#fff;display:flex;align-items:center;justify-content:center;cursor:pointer;color:var(--ink)}
-  .scrim{position:fixed;inset:0;background:rgba(43,26,36,.55);opacity:0;pointer-events:none;transition:opacity .35s;z-index:61}
+  .scrim{position:fixed;inset:0;background:rgba(43,26,36,.55);opacity:0;pointer-events:none;transition:opacity .35s;z-index:65}
+  body.menu-open .header{z-index:90}
+  body.menu-open .fab,body.menu-open .mbar{display:none}
   .scrim.show{opacity:1;pointer-events:auto}
 }
 @media(max-width:560px){.header .container{height:84px}.logo{height:56px;width:92px}}
@@ -989,7 +991,7 @@ const header=$("#header"),nav=$("#nav"),burger=$(".burger"),scrim=$(".scrim"),mb
 function onScroll(){const y=scrollY;header.classList.toggle("solid",y>60);mbar.classList.toggle("show",y>innerHeight*.7&&!nearForm());}
 function nearForm(){const r=$("#reservar").getBoundingClientRect();return r.top<innerHeight&&r.bottom>0;}
 addEventListener("scroll",onScroll,{passive:true});onScroll();
-function menu(o){nav.classList.toggle("open",o);scrim.classList.toggle("show",o);burger.setAttribute("aria-expanded",o);document.body.style.overflow=o?"hidden":"";}
+function menu(o){document.body.classList.toggle("menu-open",o);nav.classList.toggle("open",o);scrim.classList.toggle("show",o);burger.setAttribute("aria-expanded",o);document.body.style.overflow=o?"hidden":"";}
 burger.onclick=()=>menu(true);scrim.onclick=()=>menu(false);$(".nav-close").onclick=()=>menu(false);
 $$("#nav a").forEach(a=>a.addEventListener("click",()=>menu(false)));
 const navLinks=$$("#nav a:not(.btn)");
