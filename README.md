@@ -33,6 +33,17 @@ Los precios de habitaciones están en `ROOMS` (campo `price`, en US$ por noche; 
 Valores actuales de referencia tomados de plataformas de reserva: Booking.com desde US$50 (2 adultos) y Hoteles.com US$55.
 Cámbielos por las tarifas oficiales del hotel. La nota debajo de las habitaciones está en `PRICE_NOTE`.
 
+## Idiomas (español / inglés)
+El selector **ES | EN** del encabezado traduce toda la página. La elección se guarda en el navegador
+y, en la primera visita, la página abre en inglés si el navegador del visitante está en inglés.
+
+Las traducciones están en el objeto `EN` (sección "IDIOMAS" del `<script>`): a la izquierda el texto
+exacto en español y a la derecha el texto en inglés. Si cambia un texto en español en la página,
+cambie también su clave en `EN`.
+
+El mensaje de reservación que llega al WhatsApp del hotel siempre va en español; cuando el huésped
+usa la página en inglés se agrega la línea "Idioma del huésped: inglés".
+
 ## Por confirmar con el hotel
 - Tarifas oficiales por habitación y precio del Day Pass.
 - Tipos exactos de habitación y capacidad.

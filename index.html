@@ -87,6 +87,17 @@ h1,h2,h3,h4{font-family:var(--serif);font-weight:400;color:var(--ink);line-heigh
 .header.solid .nav a:not(.btn){color:var(--ink)}
 .nav .btn{height:48px;padding:0 26px;color:#fff}
 .h-phone{display:none}
+.lang{display:inline-flex;align-items:center;gap:2px;margin-left:22px;padding:4px;border-radius:999px;border:1.5px solid rgba(255,255,255,.55);background:rgba(255,255,255,.1);backdrop-filter:blur(6px)}
+.lang .icon{width:16px;height:16px;color:#fff;margin:0 4px 0 6px}
+.lang button{border:0;background:none;color:#fff;font-weight:800;font-size:.78rem;letter-spacing:.06em;padding:7px 10px;border-radius:999px;cursor:pointer;transition:all .25s}
+.lang button.on{background:#fff;color:var(--pink-600)}
+.header.solid .lang{border-color:var(--line);background:#fff}
+.header.solid .lang .icon{color:var(--pink)}
+.header.solid .lang button{color:var(--ink)}
+.header.solid .lang button.on{background:var(--pink);color:#fff}
+.h-right{display:flex;align-items:center;gap:12px}
+@media(max-width:1060px){.lang{margin-left:0}}
+@media(max-width:380px){.lang .icon{display:none}.lang button{padding:7px 8px}}
 .burger{display:none;width:48px;height:48px;border-radius:50%;border:1.5px solid rgba(255,255,255,.6);background:rgba(255,255,255,.1);color:#fff;cursor:pointer;align-items:center;justify-content:center;backdrop-filter:blur(6px)}
 .header.solid .burger{border-color:var(--line);color:var(--ink);background:#fff}
 .nav-close{display:none}
@@ -496,6 +507,7 @@ footer a:hover{color:var(--pink)}
   <symbol id="shield" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round" d="M12 3 4.5 6v5.5c0 4.6 3.2 8.4 7.5 9.5 4.3-1.1 7.5-4.9 7.5-9.5V6L12 3Z"/><path fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" d="m9 12 2 2 4-4"/></symbol>
   <symbol id="chat" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round" stroke-linecap="round"><path d="M4 5.5A2.5 2.5 0 0 1 6.5 3h11A2.5 2.5 0 0 1 20 5.5v8a2.5 2.5 0 0 1-2.5 2.5H11l-4.5 4v-4h0A2.5 2.5 0 0 1 4 13.5v-8Z"/><path d="m9.2 7.6.9 1.8 2 .3-1.4 1.4.3 2-1.8-.9-1.8.9.3-2-1.4-1.4 2-.3.9-1.8Z" transform="translate(2.8 -.3)"/></g></symbol>
   <symbol id="cal-check" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="3.5" y="5" width="17" height="15.5" rx="2.5"/><path d="M3.5 10h17M8 3v4M16 3v4M9 15l2 2 4-4"/></g></symbol>
+  <symbol id="globe" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3c2.5 2.6 3.8 5.6 3.8 9S14.5 18.4 12 21M12 3C9.5 5.6 8.2 8.6 8.2 12s1.3 6.4 3.8 9"/></g></symbol>
   <symbol id="info" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9" fill="none" stroke="currentColor" stroke-width="1.8"/><path fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" d="M12 11v6M12 7.5v.01"/></symbol>
   <symbol id="pool" viewBox="0 0 32 32"><g fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M10 21V7.5a2.5 2.5 0 0 1 5 0M19 21V7.5a2.5 2.5 0 0 1 5 0M10 12h9M10 17h9"/><path d="M3 24.5c2 1.5 4 1.5 6 0s4-1.5 6 0 4 1.5 6 0 4-1.5 6 0 3 1.5 3 1.5"/></g></symbol>
   <symbol id="kids" viewBox="0 0 32 32"><g fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="16" cy="8" r="3.5"/><path d="M10 15.5c2-1.5 4-2 6-2s4 .5 6 2M16 13.5v6M12.5 19.5h7"/><path d="M3 25c2 1.5 4 1.5 6 0s4-1.5 6 0 4 1.5 6 0 4-1.5 6 0 3 1.5 3 1.5"/></g></symbol>
@@ -536,7 +548,14 @@ footer a:hover{color:var(--pink)}
         <li><a href="#reservar" class="btn btn-pink">Reservar ahora</a></li>
       </ul>
     </nav>
-    <button class="burger" aria-label="Abrir menú" aria-controls="nav" aria-expanded="false"><svg class="icon"><use href="#menu"/></svg></button>
+    <div class="h-right">
+      <div class="lang" role="group" aria-label="Idioma">
+        <svg class="icon" aria-hidden="true"><use href="#globe"/></svg>
+        <button type="button" data-lang="es" aria-label="Español">ES</button>
+        <button type="button" data-lang="en" aria-label="English">EN</button>
+      </div>
+      <button class="burger" aria-label="Abrir menú" aria-controls="nav" aria-expanded="false"><svg class="icon"><use href="#menu"/></svg></button>
+    </div>
   </div>
 </header>
 <div class="scrim"></div>
@@ -999,7 +1018,7 @@ $$("[data-count]").forEach(el=>cio.observe(el));
 // Galería
 $$("#filters button").forEach(b=>b.onclick=()=>{$$("#filters button").forEach(x=>x.classList.toggle("on",x===b));$$(".gi").forEach(g=>g.classList.toggle("hide",b.dataset.f!=="all"&&g.dataset.cat!==b.dataset.f));});
 const lb=$("#lightbox");let li=0;const vis=()=>$$(".gi:not(.hide)");
-function show(){const v=vis();li=(li+v.length)%v.length;const g=GALLERY[v[li].dataset.i];$("img",lb).src=g.src;$("img",lb).alt=g.label;$("figcaption",lb).textContent=g.label;}
+function show(){const v=vis();li=(li+v.length)%v.length;const g=GALLERY[v[li].dataset.i];$("img",lb).src=g.src;$("img",lb).alt=g.label;$("figcaption",lb).textContent=tr(g.label);}
 function closeLb(){lb.classList.remove("open");document.body.style.overflow="";}
 $("#gallery").addEventListener("click",e=>{const a=e.target.closest(".gi");if(!a)return;e.preventDefault();li=vis().indexOf(a);show();lb.classList.add("open");document.body.style.overflow="hidden";});
 $(".lb-x").onclick=closeLb;$(".lb-p").onclick=()=>{li--;show();};$(".lb-n").onclick=()=>{li++;show();};
@@ -1010,14 +1029,14 @@ addEventListener("keydown",e=>{if(!lb.classList.contains("open"))return;if(e.key
 const pad=n=>String(n).padStart(2,"0"),iso=d=>`${d.getFullYear()}-${pad(d.getMonth()+1)}-${pad(d.getDate())}`;
 const parse=v=>{if(!v)return null;const[y,m,d]=v.split("-").map(Number);return new Date(y,m-1,d);};
 const addDays=(v,n)=>{const d=parse(v);d.setDate(d.getDate()+n);return iso(d);};
-const fmt=v=>{const s=parse(v).toLocaleDateString("es-SV",{weekday:"long",day:"numeric",month:"long",year:"numeric"});return s.charAt(0).toUpperCase()+s.slice(1);};
+const fmt=(v,lg="es")=>{const s=parse(v).toLocaleDateString(lg==="en"?"en-US":"es-SV",{weekday:"long",day:"numeric",month:"long",year:"numeric"});return s.charAt(0).toUpperCase()+s.slice(1);};
 const today=new Date();today.setHours(0,0,0,0);
 ["q-in","q-out","entrada","salida","visita"].forEach(id=>$("#"+id).min=iso(today));
 function pairDates(a,b){$("#"+a).addEventListener("change",()=>{const v=$("#"+a).value;if(!v)return;$("#"+b).min=addDays(v,1);if(!$("#"+b).value||$("#"+b).value<=v)$("#"+b).value=addDays(v,1);update();});}
 pairDates("q-in","q-out");pairDates("entrada","salida");
 
 /* ===== Reserva rápida ===== */
-$("#q-tipo").onchange=()=>{const d=$("#q-tipo").value==="daypass";$("#q-out-f").classList.toggle("hidden",d);$("#q-in-l").textContent=d?"Fecha de visita":"Llegada";};
+$("#q-tipo").onchange=()=>{const d=$("#q-tipo").value==="daypass";$("#q-out-f").classList.toggle("hidden",d);$("#q-in-l").textContent=tr(d?"Fecha de visita":"Llegada");};
 $("#quick").addEventListener("submit",e=>{e.preventDefault();const t=$("#q-tipo").value;setTipo(t);$("#adultos").value=Math.min(+$("#q-pax").value,80);
   if(t==="estadia"){if($("#q-in").value){$("#entrada").value=$("#q-in").value;$("#salida").min=addDays($("#q-in").value,1);}if($("#q-out").value)$("#salida").value=$("#q-out").value;}
   else if($("#q-in").value)$("#visita").value=$("#q-in").value;
@@ -1032,8 +1051,9 @@ $$(".stepper button").forEach(b=>b.onclick=()=>{const i=$("#"+b.dataset.t);i.val
 form.addEventListener("input",e=>{e.target.closest(".f")?.classList.remove("bad");update();});
 function nights(){const a=parse($("#entrada").value),b=parse($("#salida").value);return a&&b&&b>a?Math.round((b-a)/864e5):0;}
 function update(){const s=$("#summary"),a=+$("#adultos").value||0,n=+$("#ninos").value||0,p=a+n;let t="";
-  if(tipo()==="estadia"){const k=nights();if(k){t=`${k} ${k>1?"noches":"noche"} · ${a} ${a===1?"adulto":"adultos"}${n?` y ${n} ${n===1?"niño":"niños"}`:""}`;const r=ROOMS.find(x=>x.id===$("#habitacion").value);if(r&&r.price){const c=Math.max(1,+$("#cantidad").value||1);t+=` · Estimado desde US$${r.price*k*c}`;}}}
-  else if($("#visita").value)t=`Day Pass para ${p} ${p===1?"persona":"personas"} · ${fmt($("#visita").value)}`;
+  const en=LANG==="en";
+  if(tipo()==="estadia"){const k=nights();if(k){t=en?`${k} ${k>1?"nights":"night"} · ${a} ${a===1?"adult":"adults"}${n?` and ${n} ${n===1?"child":"children"}`:""}`:`${k} ${k>1?"noches":"noche"} · ${a} ${a===1?"adulto":"adultos"}${n?` y ${n} ${n===1?"niño":"niños"}`:""}`;const r=ROOMS.find(x=>x.id===$("#habitacion").value);if(r&&r.price){const c=Math.max(1,+$("#cantidad").value||1);t+=(en?" · Estimated from US$":" · Estimado desde US$")+(r.price*k*c);}}}
+  else if($("#visita").value)t=en?`Day Pass for ${p} ${p===1?"person":"people"} · ${fmt($("#visita").value,"en")}`:`Day Pass para ${p} ${p===1?"persona":"personas"} · ${fmt($("#visita").value)}`;
   $("span",s).textContent=t;s.classList.toggle("show",!!t);}
 $("#habitacion").addEventListener("change",update);
 function bad(id){const f=$("#"+id).closest(".f");f.classList.add("bad");return f;}
@@ -1052,7 +1072,8 @@ form.addEventListener("submit",e=>{e.preventDefault();if(!validate())return;
     L.push("*DETALLE DE LA ESTADÍA*",`Llegada: ${fmt(v("entrada"))}`,`Salida: ${fmt(v("salida"))}`,`Noches: ${nights()}`,`Habitación: ${r.name}`,`Cantidad de habitaciones: ${v("cantidad")}`);}
   else{head("DAY PASS");L.push("*DETALLE DEL DAY PASS*",`Fecha de visita: ${fmt(v("visita"))}`);}
   L.push(`Adultos: ${a}`,`Niños: ${n}`,`Total de personas: ${a+n}`);
-  if(v("llegada"))L.push(`Hora aproximada de llegada: ${v("llegada")}`);
+  if(v("llegada"))L.push(`Hora aproximada de llegada: ${$("#llegada").selectedOptions[0].dataset.es||v("llegada")}`);
+  if(LANG==="en")L.push("Idioma del huésped: inglés");
   if(v("comentarios"))L.push("","*COMENTARIOS*",v("comentarios"));
   L.push("","Quedo atento(a) a la confirmación de disponibilidad y tarifa. Gracias.");
   const url=`https://api.whatsapp.com/send?phone=${WHATSAPP}&text=${encodeURIComponent(L.join("\n"))}`;
@@ -1060,6 +1081,75 @@ form.addEventListener("submit",e=>{e.preventDefault();if(!validate())return;
 
 $("#year").textContent=new Date().getFullYear();
 setTipo("estadia");
+
+/* ================= IDIOMAS (ES / EN) ================= */
+// Para corregir una traducción, cambie el texto de la derecha. La clave (izquierda) debe ser el texto exacto en español.
+const EN={
+"Experiencias":"Experiences","Habitaciones":"Rooms","Restaurante":"Restaurant","Galería":"Gallery","Ubicación":"Location","Reservar ahora":"Book now",
+"Bienvenidos al paraíso":"Welcome to paradise","Vive":"Live",
+"Hotel, restaurante y resort frente al mar en Acajutla. Piscinas de agua salada, ranchos entre palmeras, mariscos frescos y los atardeceres más bonitos de Sonsonate.":"Beachfront hotel, restaurant and resort in Acajutla. Saltwater pools, thatched huts among palm trees, fresh seafood and the most beautiful sunsets in Sonsonate.",
+"Reservar estadía":"Book your stay","Comprar Day Pass":"Get a Day Pass","4.0 en Google · 480+ opiniones":"4.0 on Google · 480+ reviews","Habitaciones desde US$50":"Rooms from US$50","Frente al mar · Acajutla":"Beachfront · Acajutla",
+"Tipo":"Type","Estadía":"Stay","Llegada":"Check-in","Salida":"Check-out","Huéspedes":"Guests","1 persona":"1 guest","Grupo (13 o más)":"Group (13 or more)","Consultar disponibilidad":"Check availability",
+"Bienvenidos":"Welcome","Donde el mar se vuelve":"Where the sea turns into a","diamante":"diamond",
+"Punta Diamantes es un hotel familiar rodeado de palmeras, con salida directa a la playa y todo lo necesario para desconectarse sin salir del lugar.":"Punta Diamantes is a family-friendly hotel surrounded by palm trees, with direct beach access and everything you need to unwind without leaving the property.",
+"Despierte con el sonido de las olas, pase el día entre la piscina y el mar, y cierre la tarde con mariscos frescos mientras el sol se esconde en el Pacífico. Ideal para escapadas en pareja, vacaciones en familia, excursiones y celebraciones.":"Wake up to the sound of the waves, spend the day between the pool and the ocean, and end the afternoon with fresh seafood as the sun sets over the Pacific. Perfect for couples' getaways, family vacations, group trips and celebrations.",
+"Frente al mar":"Beachfront","Agua salada":"Saltwater","Ideal para familias":"Family friendly","Atardeceres":"Sunsets","Ver habitaciones y precios":"See rooms and rates","Recorrer la galería":"Browse the gallery",
+"Un día perfecto en":"A perfect day at","Todo lo que necesita para unas vacaciones inolvidables, en un solo lugar.":"Everything you need for an unforgettable vacation, all in one place.",
+"Relájese":"Relax","Piscinas":"Pools","Piscina de agua salada y piscina para niños rodeadas de ranchos y palmeras.":"Saltwater pool and kids' pool surrounded by huts and palm trees.",
+"Descanse":"Unwind","Jardines y palmeras":"Gardens and palms","Áreas verdes con sombra natural y salida directa a Playa Metalío.":"Green areas with natural shade and direct access to Playa Metalío.",
+"Saboree":"Taste","Mariscos frescos, desayunos típicos y cócteles junto a la piscina.":"Fresh seafood, traditional breakfasts and poolside cocktails.",
+"Celebre":"Celebrate","Grupos y eventos":"Groups and events","Cumpleaños, reuniones familiares y excursiones. Reserve su rancho.":"Birthdays, family gatherings and group trips. Reserve your hut.",
+"Servicios":"Amenities","Pensado para su":"Designed for your","comodidad":"comfort","Instalaciones para relajarse, compartir en familia y aprovechar cada momento junto al mar.":"Facilities to relax, enjoy time with family and make the most of every moment by the sea.",
+"Piscina de agua salada":"Saltwater pool","Para adultos y familias":"For adults and families","Piscina para niños":"Kids' pool","Área para los pequeños":"A space for the little ones","Acceso a la playa":"Beach access","Salida directa al mar":"Direct access to the ocean","Cocina local y mariscos":"Local cuisine and seafood","Bebidas junto a la piscina":"Drinks by the pool","Ranchos":"Thatched huts","Sombra frente al mar":"Shade by the sea","Aire acondicionado":"Air conditioning","En todas las habitaciones":"In every room","Wi-Fi gratuito":"Free Wi-Fi","Conexión para huéspedes":"For all guests","Parqueo gratuito":"Free parking","Dentro de las instalaciones":"On site","Recepción":"Front desk","Atención personalizada":"Personalized service",
+"Hospedaje":"Accommodation","Habitaciones y":"Rooms and","tarifas":"rates","Espacios frescos y cómodos con aire acondicionado y baño privado, a pocos pasos de la piscina y la playa.":"Cool, comfortable spaces with air conditioning and a private bathroom, just steps from the pool and the beach.",
+"Parejas":"Couples","Desde":"From","/ noche":"/ night","Habitación Matrimonial":"Double Room","Cama matrimonial en un ambiente fresco y tranquilo, a pasos de la piscina. Ideal para una escapada romántica frente al mar.":"A double bed in a cool, quiet setting just steps from the pool. Perfect for a romantic getaway by the sea.",
+"Hasta 2 personas":"Up to 2 guests","Baño privado":"Private bathroom","Reservar esta habitación":"Book this room","Consultar tarifa":"Ask for rates","Amigos y familia":"Friends and family","Habitación Doble":"Twin Room","Dos camas, closet amplio y baño privado. Perfecta para viajar con amigos o en familia pequeña.":"Two beds, a large closet and a private bathroom. Perfect for traveling with friends or a small family.",
+"Hasta 4 personas":"Up to 4 guests","Grupos":"Groups","Tarifa":"Rate","Consultar":"Ask us","Habitación Familiar":"Family Room","Opciones triples, cuádruples y familiares con más espacio para que todo el grupo descanse cómodo.":"Triple, quadruple and family options with extra space so the whole group can rest comfortably.","Hasta 6 personas":"Up to 6 guests",
+"Tarifas de referencia por noche en dólares, antes de impuestos. Pueden variar según temporada y disponibilidad; la tarifa final se confirma por WhatsApp.":"Reference rates per night in US dollars, before taxes. Rates may vary by season and availability; the final rate is confirmed via WhatsApp.",
+"Check-in 3:00 p. m.":"Check-in 3:00 p.m.","Check-out 1:00 p. m.":"Check-out 1:00 p.m.","Confirmación directa con el hotel":"Direct confirmation with the hotel",
+"Pase de día":"Day pass","Un día completo de playa, piscina y sabor":"A full day of beach, pool and great food","No necesita hospedarse para disfrutar Punta Diamantes. Venga con su familia o amigos y aproveche todas nuestras instalaciones.":"You don't need to stay overnight to enjoy Punta Diamantes. Come with family or friends and enjoy all our facilities.",
+"Acceso directo a la playa":"Direct beach access","Ranchos y zonas de sombra":"Huts and shaded areas","Restaurante y bar":"Restaurant and bar","Parqueo para visitantes":"Visitor parking","Su pase al paraíso":"Your pass to paradise","7:00 a. m. a 8:00 p. m.":"7:00 a.m. to 8:00 p.m.","Lunes a domingo":"Monday to Sunday","Familias, grupos y excursiones":"Families, groups and tours","Consulte tarifas especiales para grupos":"Ask about special group rates","Reserve su rancho":"Reserve your hut","Indíquelo en su solicitud":"Mention it in your request","Reservar Day Pass":"Book a Day Pass",
+"Calificación en Google":"Google rating","Opiniones de huéspedes":"Guest reviews","Todos los días":"Every day","Abierto de lunes a domingo":"Open Monday to Sunday",
+"Sabores del mar con":"Flavors of the sea with","vista a la playa":"a beach view","Cocina salvadoreña y mariscos frescos para desayunar, almorzar y cenar. Abierto para huéspedes y visitantes.":"Salvadoran cuisine and fresh seafood for breakfast, lunch and dinner. Open to hotel guests and visitors.",
+"Mariscos de la costa":"Coastal seafood","Pescado frito, cócteles, ceviches y especialidades del día.":"Fried fish, seafood cocktails, ceviches and daily specials.","Desayunos a la carta":"À la carte breakfast","Desayunos típicos salvadoreños para comenzar el día frente al mar.":"Traditional Salvadoran breakfasts to start your day by the sea.","Bar junto a la piscina":"Poolside bar","Cócteles, bebidas frías y refrescos para disfrutar bajo las palmeras.":"Cocktails, cold drinks and refreshments to enjoy under the palm trees.","Solicitar menú":"Request the menu","Buen":"Enjoy","provecho":"your meal",
+"Conozca":"Explore","el lugar":"the place","Todas":"All","Instalaciones":"Facilities","Piscina y ranchos":"Pool and huts","Habitación matrimonial":"Double room","Escalinata principal":"Main staircase","Rancho bar":"Hut bar","Edificio de habitaciones":"Room building","Piscina principal":"Main pool","Habitación doble":"Twin room","Habitación familiar":"Family room","Balcones y jardín":"Balconies and garden","Piscina con fuente":"Pool with fountain","Rancho entre palmeras":"Hut among palm trees","Áreas verdes":"Green areas","Entrada principal":"Main entrance","Parqueo":"Parking",
+"Opiniones":"Reviews","felices":"love it","Calificaciones publicadas por huéspedes en las principales plataformas de viaje.":"Ratings posted by guests on the leading travel platforms.","Más de 480 opiniones":"More than 480 reviews","Calificación de huéspedes":"Guest rating","58 opiniones de huéspedes":"58 guest reviews","Comida deliciosa a buen precio":"Delicious food at great prices","Piscina renovada":"Renovated pool","Atardeceres increíbles":"Incredible sunsets","Instalaciones amplias":"Spacious facilities",
+"Su próxima escapada empieza aquí":"Your next getaway starts here","El mar le está esperando":"The ocean is waiting for you","Reserve hoy su habitación o Day Pass y viva Playa Metalío como nunca antes.":"Book your room or Day Pass today and experience Playa Metalío like never before.","Escribir por WhatsApp":"Message us on WhatsApp",
+"Reserve directamente con nosotros":"Book directly with us","Complete el formulario y su solicitud llegará a nuestro WhatsApp con todos sus datos.":"Fill out the form and your request will reach our WhatsApp with all your details.","Complete sus datos":"Fill in your details","Fechas, número de personas y habitación.":"Dates, number of guests and room.","Envíe por WhatsApp":"Send via WhatsApp","Se abrirá el chat con su solicitud lista.":"The chat will open with your request ready to send.","Reciba su confirmación":"Get your confirmation","Disponibilidad, tarifa final y forma de pago.":"Availability, final rate and payment method.",
+"Hospedaje por noches":"Overnight stay","Nombre completo":"Full name","Ingrese su nombre completo.":"Please enter your full name.","Teléfono / WhatsApp":"Phone / WhatsApp","Ingrese un número válido.":"Please enter a valid number.","Correo electrónico":"Email","Revise el correo.":"Please check your email.","Fecha de llegada":"Check-in date","Seleccione la fecha de llegada.":"Please select a check-in date.","Fecha de salida":"Check-out date","Debe ser posterior a la llegada.":"Must be after check-in.","Habitación":"Room","Seleccione una opción":"Select an option","Seleccione una habitación.":"Please select a room.","Nº de habitaciones":"No. of rooms","Fecha de visita":"Visit date","Seleccione la fecha de su visita.":"Please select your visit date.","Adultos":"Adults","Niños":"Children","Hora aproximada de llegada":"Estimated arrival time","Sin definir":"Not sure yet","7:00 a 9:00 a. m.":"7:00 to 9:00 a.m.","9:00 a 11:00 a. m.":"9:00 to 11:00 a.m.","11:00 a. m. a 1:00 p. m.":"11:00 a.m. to 1:00 p.m.","1:00 a 3:00 p. m.":"1:00 to 3:00 p.m.","3:00 a 5:00 p. m.":"3:00 to 5:00 p.m.","Después de las 5:00 p. m.":"After 5:00 p.m.","Comentarios o solicitudes especiales":"Comments or special requests","Enviar solicitud por WhatsApp":"Send request via WhatsApp","Sus datos se envían solo al WhatsApp oficial del hotel.":"Your details are sent only to the hotel's official WhatsApp.",
+"Cómo llegar":"Getting here","Dirección":"Address","Horario":"Hours","Lunes a domingo, 7:00 a. m. a 8:00 p. m.":"Monday to Sunday, 7:00 a.m. to 8:00 p.m.","Reservaciones":"Reservations","Abrir en":"Open in",
+"Síganos y viva la experiencia":"Follow us and experience","Hotel, restaurante y resort frente al mar en Playa Metalío. El mejor lugar para disfrutar de sus vacaciones en El Salvador.":"Beachfront hotel, restaurant and resort in Playa Metalío. The best place to enjoy your vacation in El Salvador.","Explorar":"Explore","Horarios":"Hours","Check-in: 3:00 p. m.":"Check-in: 3:00 p.m.","Check-out: 1:00 p. m.":"Check-out: 1:00 p.m.","Contacto":"Contact","Punta Diamantes. Hotel, Restaurante y Resort.":"Punta Diamantes. Hotel, Restaurant & Resort.","¿Necesita ayuda? Escríbanos":"Need help? Message us",
+"Punta Diamantes, inicio":"Punta Diamantes, home","Principal":"Main","Cerrar menú":"Close menu","Abrir menú":"Open menu","Idioma":"Language","Edificio de habitaciones con balcones":"Room building with balconies","Piscina con fuente frente a las habitaciones":"Pool with fountain in front of the rooms","Rancho bar junto a la piscina":"Hut bar by the pool","Bar con bebidas":"Bar with drinks","Tipo de reservación":"Booking type","Nombre y apellido":"First and last name","Opcional":"Optional","Menos habitaciones":"Fewer rooms","Más habitaciones":"More rooms","Menos adultos":"Fewer adults","Más adultos":"More adults","Menos niños":"Fewer children","Más niños":"More children","Celebraciones, cama adicional, reserva de rancho, alergias alimentarias...":"Celebrations, extra bed, hut reservation, food allergies...","Mapa de Punta Diamantes, Playa Metalío":"Map of Punta Diamantes, Playa Metalío","Escríbanos por WhatsApp":"Message us on WhatsApp","Foto ampliada":"Enlarged photo","Cerrar":"Close","Anterior":"Previous","Siguiente":"Next",
+"Punta Diamantes | Hotel, Restaurante y Resort en Playa Metalío":"Punta Diamantes | Beachfront Hotel, Restaurant & Resort in Playa Metalío, El Salvador"
+};
+(()=>{for(let i=2;i<=12;i++)EN[`${i} personas`]=`${i} guests`;
+  ROOMS.forEach(r=>{const es=`${r.name} (${r.cap})${r.price?` · desde US$${r.price}`:""}`;const cap=r.cap.replace(" a "," to ").replace("personas","guests");EN[es]=`${EN[r.name]||r.name} (${cap})${r.price?` · from US$${r.price}`:""}`;});})();
+
+var LANG=(()=>{try{const s=localStorage.getItem("pd-lang");if(s==="es"||s==="en")return s;}catch(e){}return (navigator.language||"es").toLowerCase().startsWith("es")?"es":"en";})();
+const tr=s=>LANG==="en"&&EN[s]?EN[s]:s;
+const ORIG=new WeakMap(), ATTRS=["placeholder","alt","aria-label","title"];
+function applyLang(lang){
+  LANG=lang; try{localStorage.setItem("pd-lang",lang);}catch(e){}
+  document.documentElement.lang=lang;
+  const w=document.createTreeWalker(document.body,NodeFilter.SHOW_TEXT,{acceptNode:n=>/^(SCRIPT|STYLE)$/.test(n.parentNode.nodeName)?2:1});
+  let n;while(n=w.nextNode()){
+    if(!ORIG.has(n))ORIG.set(n,n.nodeValue);
+    const o=ORIG.get(n),k=o.trim().replace(/\s+/g," ");
+    if(k&&EN[k]){const lead=o.match(/^\s*/)[0],trail=o.match(/\s*$/)[0];n.nodeValue=lang==="en"?lead+EN[k]+trail:o;}
+  }
+  document.querySelectorAll("[placeholder],[alt],[aria-label],[title]").forEach(el=>ATTRS.forEach(a=>{
+    if(!el.hasAttribute(a))return; const key="i18n"+a.replace("-","");
+    if(!(key in el.dataset))el.dataset[key]=el.getAttribute(a);
+    const o=el.dataset[key]; if(EN[o])el.setAttribute(a,lang==="en"?EN[o]:o);
+  }));
+  $$("#llegada option").forEach(op=>{if(!op.dataset.es)op.dataset.es=op.textContent.trim();});
+  document.title=tr("Punta Diamantes | Hotel, Restaurante y Resort en Playa Metalío");
+  $$(".lang button").forEach(b=>{b.classList.toggle("on",b.dataset.lang===lang);b.setAttribute("aria-pressed",b.dataset.lang===lang);});
+  $("#q-in-l").textContent=tr($("#q-tipo").value==="daypass"?"Fecha de visita":"Llegada");
+  update();
+}
+$$(".lang button").forEach(b=>b.addEventListener("click",()=>applyLang(b.dataset.lang)));
+applyLang(LANG);
 </script>
 </body>
 </html>
