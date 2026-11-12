@@ -49,7 +49,10 @@ h1,h2,h3,h4{font-family:var(--serif);font-weight:400;color:var(--ink);line-heigh
 .sec-head{margin-bottom:64px}
 .sec-head.split{display:flex;justify-content:space-between;align-items:flex-end;gap:40px;text-align:left}
 .sec-head.split .h2{margin-bottom:0}
-@media(max-width:860px){.sec-head.split{flex-direction:column;align-items:flex-start;gap:20px}}
+.exp-head{align-items:center}
+.exp-head .side{max-width:420px;padding:6px 0 6px 28px;border-left:3px solid var(--pink)}
+.exp-head .side .lead{font-size:1.15rem;margin-bottom:16px}
+@media(max-width:860px){.sec-head.split{flex-direction:column;align-items:flex-start;gap:20px}.exp-head .side{padding-left:20px}}
 
 /* Botones */
 .btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;height:56px;padding:0 32px;border-radius:999px;font-weight:700;font-size:.95rem;letter-spacing:.02em;border:0;cursor:pointer;transition:all .3s var(--ease);white-space:nowrap;position:relative;overflow:hidden}
@@ -635,12 +638,15 @@ footer a:hover{color:var(--pink)}
 <!-- EXPERIENCIAS -->
 <section class="sec exp-sec" id="experiencias">
   <div class="container">
-    <div class="sec-head split rv">
+    <div class="sec-head split exp-head rv">
       <div>
         <span class="kicker"><img src="img/diamante-rosa.png" alt="">Experiencias</span>
         <h2 class="h2">Un día perfecto en <span class="script">Punta Diamantes</span></h2>
       </div>
-      <p class="lead">Todo lo que necesita para unas vacaciones inolvidables, en un solo lugar.</p>
+      <div class="side">
+        <p class="lead">Todo lo que necesita para unas vacaciones inolvidables, en un solo lugar.</p>
+        <a href="#galeria" class="link-arrow">Ver más fotos <svg class="icon"><use href="#arrow"/></svg></a>
+      </div>
     </div>
     <div class="exp" id="exp"></div>
   </div>
@@ -1093,7 +1099,7 @@ const EN={
 "Bienvenidos":"Welcome","Donde el mar se vuelve":"Where the sea turns into a","diamante":"diamond",
 "Punta Diamantes es un hotel familiar rodeado de palmeras, con salida directa a la playa y todo lo necesario para desconectarse sin salir del lugar.":"Punta Diamantes is a family-friendly hotel surrounded by palm trees, with direct beach access and everything you need to unwind without leaving the property.",
 "Despierte con el sonido de las olas, pase el día entre la piscina y el mar, y cierre la tarde con mariscos frescos mientras el sol se esconde en el Pacífico. Ideal para escapadas en pareja, vacaciones en familia, excursiones y celebraciones.":"Wake up to the sound of the waves, spend the day between the pool and the ocean, and end the afternoon with fresh seafood as the sun sets over the Pacific. Perfect for couples' getaways, family vacations, group trips and celebrations.",
-"Frente al mar":"Beachfront","Agua salada":"Saltwater","Ideal para familias":"Family friendly","Atardeceres":"Sunsets","Ver habitaciones y precios":"See rooms and rates","Recorrer la galería":"Browse the gallery",
+"Frente al mar":"Beachfront","Agua salada":"Saltwater","Ideal para familias":"Family friendly","Atardeceres":"Sunsets","Ver habitaciones y precios":"See rooms and rates","Recorrer la galería":"Browse the gallery","Ver más fotos":"See more photos",
 "Un día perfecto en":"A perfect day at","Todo lo que necesita para unas vacaciones inolvidables, en un solo lugar.":"Everything you need for an unforgettable vacation, all in one place.",
 "Relájese":"Relax","Piscinas":"Pools","Piscina de agua salada y piscina para niños rodeadas de ranchos y palmeras.":"Saltwater pool and kids' pool surrounded by huts and palm trees.",
 "Descanse":"Unwind","Jardines y palmeras":"Gardens and palms","Áreas verdes con sombra natural y salida directa a Playa Metalío.":"Green areas with natural shade and direct access to Playa Metalío.",
