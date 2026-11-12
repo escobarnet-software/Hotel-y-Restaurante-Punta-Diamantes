@@ -28,8 +28,13 @@ la portada y la sección Day Pass se verán mucho más nítidas.
 - `ROOMS` → habitaciones (nombre, foto, texto, capacidad).
 - `GALLERY` → fotos de la galería, categoría y tamaño (`w` ancha, `t` alta).
 
+## Precios
+Los precios de habitaciones están en `ROOMS` (campo `price`, en US$ por noche; `null` muestra "Consultar").
+Valores actuales de referencia tomados de plataformas de reserva: Booking.com desde US$50 (2 adultos) y Hoteles.com US$55.
+Cámbielos por las tarifas oficiales del hotel. La nota debajo de las habitaciones está en `PRICE_NOTE`.
+
 ## Por confirmar con el hotel
-- Tarifas por habitación y precio del Day Pass (ahora dice "A consultar").
+- Tarifas oficiales por habitación y precio del Day Pass.
 - Tipos exactos de habitación y capacidad.
 - Horario: Instagram dice 7:00 a. m. a 8:00 p. m.; otra fuente dice 9:00 a. m. a 5:00 p. m.
 - Platos del menú.
