@@ -70,6 +70,7 @@ h1,h2,h3,h4{font-family:var(--serif);font-weight:400;color:var(--ink);line-heigh
 .btn-line:hover{background:var(--plum);color:#fff}
 .btn-wa{background:var(--wa);color:#063a1b}
 .btn-wa:hover{transform:translateY(-3px);filter:brightness(.96)}
+@media(max-width:420px){.btn{white-space:normal;text-align:center;line-height:1.25;height:auto;min-height:54px;padding:12px 24px}.send{min-height:62px}}
 .link-arrow{display:inline-flex;align-items:center;gap:8px;font-weight:700;color:var(--pink-600)}
 .link-arrow .icon{width:18px;height:18px;transition:transform .2s}
 .link-arrow:hover .icon{transform:translateX(5px)}
@@ -411,7 +412,8 @@ form.bk{padding:52px 48px}
 .send{width:100%;height:62px;margin-top:28px;font-size:1.02rem}
 .note{text-align:center;font-size:.85rem;color:var(--muted);margin-top:14px;display:flex;justify-content:center;align-items:center;gap:8px}
 .note .icon{width:16px;height:16px;color:var(--pink)}
-@media(max-width:1060px){.book{grid-template-columns:1fr}.book-side{padding:46px 32px}}
+.book>*{min-width:0}
+@media(max-width:1060px){.book{grid-template-columns:minmax(0,1fr)}.book-side{padding:46px 32px}}
 @media(max-width:560px){form.bk{padding:34px 20px}.fgrid{grid-template-columns:1fr}.seg{grid-template-columns:1fr}.book{border-radius:22px}.book-side{padding:40px 24px}}
 
 /* ===== Ubicación ===== */
@@ -1137,6 +1139,7 @@ const ORIG=new WeakMap(), ATTRS=["placeholder","alt","aria-label","title"];
 function applyLang(lang){
   LANG=lang; try{localStorage.setItem("pd-lang",lang);}catch(e){}
   document.documentElement.lang=lang;
+  $$("#llegada option").forEach(op=>{if(!op.dataset.es)op.dataset.es=op.textContent.trim();});
   const w=document.createTreeWalker(document.body,NodeFilter.SHOW_TEXT,{acceptNode:n=>/^(SCRIPT|STYLE)$/.test(n.parentNode.nodeName)?2:1});
   let n;while(n=w.nextNode()){
     if(!ORIG.has(n))ORIG.set(n,n.nodeValue);
@@ -1148,7 +1151,6 @@ function applyLang(lang){
     if(!(key in el.dataset))el.dataset[key]=el.getAttribute(a);
     const o=el.dataset[key]; if(EN[o])el.setAttribute(a,lang==="en"?EN[o]:o);
   }));
-  $$("#llegada option").forEach(op=>{if(!op.dataset.es)op.dataset.es=op.textContent.trim();});
   document.title=tr("Punta Diamantes | Hotel, Restaurante y Resort en Playa Metalío");
   $$(".lang button").forEach(b=>{b.classList.toggle("on",b.dataset.lang===lang);b.setAttribute("aria-pressed",b.dataset.lang===lang);});
   $("#q-in-l").textContent=tr($("#q-tipo").value==="daypass"?"Fecha de visita":"Llegada");
